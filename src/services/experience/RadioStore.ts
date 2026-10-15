@@ -44,7 +44,7 @@ export class RadioStore {
     if (!this.enabled || changed) this.pause()
     if (changed) { if (this.audio) this.audio.removeAttribute('src'); this.set({ trackId: selected, error: '' }) }
     if (this.audio) this.audio.volume = this.volume
-    // A restored preference or cross-tab change never starts playback.
+    // Restaurar preferências ou sincronizar abas nunca inicia a música sozinho.
   }
   play = async () => {
     const track = this.tracks.find(t => t.id === this.view.trackId)
@@ -62,7 +62,7 @@ export class RadioStore {
       }
       const audio = this.audio
       audio.preload = 'none'; audio.loop = true; audio.volume = this.volume
-      // Absolute URL normalization is left to the browser; do not reload the same source on resume.
+      // O navegador normaliza a URL; retomar a mesma faixa não recarrega sua origem.
       if (!audio.src.endsWith(track.src)) audio.src = track.src
       await audio.play()
       if (request === this.token) this.set({ playing: true, busy: false })

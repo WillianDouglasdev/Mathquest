@@ -69,7 +69,7 @@ describe('motor puro de foco', () => {
       const run = runner(minutes)
       run.command('start')
       run.study(minutes * 60_000 - 1_000)
-      run.advance(4_000) // An ordinary delayed callback crosses the deadline.
+      run.advance(4_000) // Simulamos uma atualização atrasada que ultrapassa a meta da sessão.
       expect(run.state.current?.status).toBe('completed')
       expect(run.state.current?.elapsedMs).toBe(minutes * 60_000)
       expect(remainingMs(run.state)).toBe(0)

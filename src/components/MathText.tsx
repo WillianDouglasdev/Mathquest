@@ -10,8 +10,8 @@
 import { Fragment, createElement } from 'react'
 import styles from './MathText.module.css'
 
-// Presentation only: keep source strings/IDs and educational rules unchanged.
-// Native MathML avoids a large formula runtime for the predefined content.
+// Esta camada só apresenta: textos de origem, IDs e regras educacionais não mudam.
+// O MathML nativo atende às expressões predefinidas sem uma biblioteca pesada.
 const token = /(\d+\/\d+|\d+[²³])/g
 export function MathText({ text }: { text: string }) {
   const parts = text.split(token)

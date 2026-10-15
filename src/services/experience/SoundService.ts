@@ -11,7 +11,7 @@
 export type SoundEvent = 'primary' | 'correct' | 'incorrect' | 'pomodoro' | 'achievement' | 'streak' | 'flip'
   | 'navigate' | 'open' | 'close' | 'mission' | 'select' | 'start' | 'pause' | 'resume' | 'finish' | 'reset' | 'next' | 'reviewComplete'
 export type Note = readonly [frequency: number, duration: number]
-// Original minimal cues, in seconds. No samples or external sound service.
+// Sequências curtas de notas, com duração em segundos, sem arquivos ou serviço externo.
 export const cues: Record<SoundEvent, readonly Note[]> = {
   primary: [[440, .035]], flip: [[330, .035], [440, .035]],
   correct: [[523.25, .06], [659.25, .09]], incorrect: [[220, .07], [196, .1]],
@@ -73,7 +73,7 @@ export class SoundService {
     if (options.id) { if (this.ids.size >= 1000) this.ids.clear(); this.ids.add(options.id) }
     try {
       this.synth ??= this.createSynth()
-      // New cue replaces the previous cue; no unbounded overlapping voices.
+      // O novo efeito substitui o anterior para não acumular vozes sobrepostas.
       void this.synth.play(cues[event], this.volume).then(() => {
         if (generation === this.generation && this.view.error) this.error('')
       }).catch(() => { if (generation === this.generation) this.error('Efeitos sonoros indisponíveis neste navegador. Você pode continuar estudando sem som.') })

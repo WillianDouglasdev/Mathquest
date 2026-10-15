@@ -23,7 +23,7 @@ export type Flashcard = {
 }
 export const CONTENT_VERSION = 1
 
-// Curated local content: stable IDs, no runtime generation or external service.
+// Conteúdo local predefinido, com IDs estáveis e sem geração ou serviço externo.
 export const flashcards: readonly Flashcard[] = [
   {
     id: 'op-01',

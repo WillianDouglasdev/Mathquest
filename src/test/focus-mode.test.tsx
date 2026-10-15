@@ -68,6 +68,6 @@ describe('Modo Foco', () => {
     expect(synth).not.toHaveBeenCalled()
     await userEvent.click(screen.getByText('Ambiente MathQuest'))
     expect(screen.getByRole('checkbox', { name: 'Modo Foco durante o Pomodoro' })).not.toBeChecked()
-    expect(synth).toHaveBeenCalledTimes(1) // Opening settings now has an intentional cue.
+    expect(synth).toHaveBeenCalledTimes(1) // Abrir as configurações tem um efeito intencional.
   })
 })

@@ -5,7 +5,7 @@
  * interface, textos e HP serão sempre camadas independentes.
  */
 
-// Runtime copies are byte-identical to art/assets/. References/previews stay in art/.
+// As cópias públicas são idênticas às fontes; referências e prévias ficam em art/.
 export const arenaBackground = {
   src: '/assets/arena/background/arena-forest-ruins.png',
   width: 1536,

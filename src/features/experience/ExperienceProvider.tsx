@@ -53,7 +53,7 @@ export function useExperience() {
   return { ...useSyncExternalStore(context.store.subscribe, context.store.getSnapshot), update: context.store.update, reload: context.store.load, reducedMotion: context.reducedMotion, focusActive: context.focusActive, settingsOpen: context.settingsOpen, setSettingsOpen: context.setSettingsOpen, settingsRequest: context.settingsRequest, openSoundSettings: context.openSoundSettings }
 }
 
-// StudentAvatar remains usable without the app providers, conservatively static.
+// Sem os providers da aplicação, o StudentAvatar continua utilizável e estático.
 export function useStudentAnimationPolicy(focusSensitive: boolean) {
   const context = useContext(Context)
   const { preferences } = useSyncExternalStore(context?.store.subscribe ?? noSubscribe, context?.store.getSnapshot ?? getStaticPolicy)

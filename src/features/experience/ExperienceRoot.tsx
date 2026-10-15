@@ -8,7 +8,7 @@ import type { ReactNode } from 'react'
 import { useFocus } from '../focus/FocusProvider'
 import { ExperienceProvider } from './ExperienceProvider'
 
-// Read-only bridge: never dispatch a timer command from experience settings.
+// Esta ponte só observa; configurações de ambiente não comandam o cronômetro.
 export function ExperienceRoot({ children }: { children: ReactNode }) {
   const { state } = useFocus()
   return <ExperienceProvider focusRunning={state.current?.status === 'running'}>{children}</ExperienceProvider>

@@ -12,7 +12,7 @@ import type { TrailDemoProgress, TrailRegion, TrailState, TrailView } from './mo
 
 export const canPreview = (state: TrailState) => state !== 'locked'
 
-// Selectors only: inspecting or previewing the map never records educational progress.
+// Estes seletores apenas consultam: explorar o mapa não registra estudo concluído.
 export function deriveTrail(regions: readonly TrailRegion[], progress: TrailDemoProgress): TrailView {
   const completed = new Set(progress.completedActivityIds)
   // O catálogo define o total da trilha. IDs repetidos ou que nem pertencem a ele

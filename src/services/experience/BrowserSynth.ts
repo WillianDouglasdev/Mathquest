@@ -40,7 +40,7 @@ export class BrowserSynth implements SynthPort {
     this.generation++
     for (const { oscillator, gain } of this.voices) {
       oscillator.onended = null
-      try { oscillator.stop() } catch { /* Already ended. */ }
+      try { oscillator.stop() } catch { /* O oscilador já havia terminado. */ }
       oscillator.disconnect(); gain.disconnect()
     }
     this.voices.clear()

@@ -15,7 +15,7 @@ export function useCharacterVisibility(ref: RefObject<HTMLElement | null>, enabl
   useEffect(() => {
     setVisible(false)
     const element = ref.current
-    // Conservative fallback: without viewport observation, use the still image.
+    // Sem observar a área visível com segurança, mantemos a imagem estática.
     if (!enabled || !element || typeof IntersectionObserver === 'undefined') return
     let intersecting = false
     const publish = () => setVisible(intersecting && document.visibilityState === 'visible' && !element.closest('[inert], [hidden]'))

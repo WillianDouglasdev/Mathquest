@@ -14,6 +14,6 @@ export type MusicTrack = {
   license: string
   attribution: string
 }
-// Add only verified, licensed local files; never expose fictitious playable songs.
-// See public/audio/README.md for the catalog and licensing checklist.
+// Só entram arquivos locais com licença verificada, sem faixas fictícias tocáveis.
+// O catálogo e os cuidados com licença estão em public/audio/README.md.
 export const musicTracks: readonly MusicTrack[] = []

@@ -20,8 +20,8 @@ const activities = (id: string, subject: string, objectives: readonly [string, s
   }))
 }
 
-// Centers of the six dirt clearings in the approved 1672×941 artwork.
-// All coordinates are percentages of the complete image, never a cropped background.
+// Os pontos correspondem aos centros das seis clareiras na arte aprovada de 1672×941.
+// As coordenadas são percentuais da imagem inteira, sem considerar recortes da tela.
 export const trailRegions: readonly TrailRegion[] = [
   {
     id: 'campo', name: 'Campo dos Números', description: 'Sua jornada começa entre os campos. Reconheça os números que dão forma ao mundo.',

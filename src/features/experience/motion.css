@@ -4,7 +4,7 @@
  *  lentos; preferências de movimento e Modo Foco removem a animação sem ocultar dados.
  */
 
-/* Reusable decorative motion; original raster assets are never changed. */
+/* Movimentos decorativos reutilizáveis, sem alterar as imagens originais. */
 @keyframes mq-idle { 0%, 70%, 100% { transform: translateY(0); } 80%, 90% { transform: translateY(-2px); } }
 @keyframes mq-flag { 0%, 100% { transform: skewY(-2deg); } 50% { transform: skewY(3deg); } }
 @keyframes mq-cloud { from { transform: translateX(-24px); } to { transform: translateX(80px); } }
@@ -18,7 +18,7 @@
 .mq-reward { animation: mq-reward .3s ease-out both; }
 .mq-trophy::after { content: ''; position: absolute; width: 9px; height: 12px; top: 5%; right: 8%; background: #e7ae14; clip-path: polygon(50% 0,65% 35%,100% 50%,65% 65%,50% 100%,35% 65%,0 50%,35% 35%); animation: mq-shine 14s ease-in-out infinite; pointer-events: none; }
 .mq-progress > span { transform-origin: left; animation: mq-grow .35s ease-out; transition: width .25s ease-out; }
-/* XP stays still, including first paint; other progress feedback is preserved. */
+/* A barra de XP fica estática desde a montagem; as demais barras mantêm seu feedback. */
 .mq-progress--static > span { animation: none; transition: none; }
 .mq-clouds { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .mq-clouds::before, .mq-clouds::after {
@@ -33,7 +33,7 @@
   animation: mq-cloud 100s steps(104, end) infinite alternate;
 }
 .mq-clouds::after { top: 58px; left: 62%; width: 74px; height: 26px; animation-duration: 130s; animation-direction: alternate-reverse; }
-/* Separate layers stay behind the quote; no transform touches the landscape. */
+/* As camadas ficam atrás da mensagem; a paisagem não recebe transformações. */
 .mq-clouds--sidebar::before { top: 18px; left: 4%; width: 76px; height: 28px; background: #ffffff65; animation-duration: 110s; }
 .mq-clouds--sidebar::after { top: 52px; left: 48%; width: 56px; height: 20px; background: #ffffff55; animation-duration: 140s; }
 .mq-tomato[data-state='completed'] { animation: mq-reward .4s ease-out; }

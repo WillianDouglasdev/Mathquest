@@ -33,7 +33,7 @@ export type FocusView = {
   nowMs: number
 }
 
-// No React dependency. Browser clock, storage and lifecycle are injected adapters.
+// Sem dependência de React; relógio e armazenamento chegam por interfaces injetadas.
 export class FocusStore {
   private view: FocusView = {
     state: initialState(),
@@ -127,7 +127,7 @@ export class FocusStore {
   tick = () => {
     this.dispatch({ type: 'tick' })
     const nowMs = this.clock().wallMs
-    // Refresh civil statistics across midnight even while the timer is idle.
+    // Atualizamos a data das estatísticas mesmo quando o cronômetro está parado.
     if (Math.floor(nowMs / 60_000) !== Math.floor(this.view.nowMs / 60_000))
       this.update({ ...this.view, nowMs })
   }

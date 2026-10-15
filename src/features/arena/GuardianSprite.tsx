@@ -32,13 +32,13 @@ export function GuardianSprite({ state = 'idle', decorative = false, className =
   useEffect(() => {
     if (previous.current === state) return
     previous.current = state
-    // A restored pose never attacks on mount. Hidden events are not queued.
+    // Uma pose restaurada não dispara ataque; eventos fora de vista são descartados.
     setAction(motion && allowed && visible && state !== 'idle' ? state : null)
   }, [state, motion, allowed, visible])
   useEffect(() => {
     if (!motion || !allowed || !visible) setAction(null)
   }, [motion, allowed, visible])
-  // Keep the semantic pose when motion is off. All four poses are static PNGs.
+  // Desligar movimentos preserva a pose: os quatro estados usam PNGs estáticos.
   return <span ref={element} className={`${styles.guardianSprite} ${className}`}
     data-guardian-state={state} data-guardian-motion={motion && allowed && visible && (state === 'idle' || action === state) ? 'on' : 'off'}
     aria-hidden={decorative ? true : undefined}>

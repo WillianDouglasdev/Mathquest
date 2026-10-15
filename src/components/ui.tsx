@@ -35,8 +35,8 @@ export type IconName =
   | 'shield'
   | 'coin'
   | 'mountain'
-// Keep the legacy student's atlas slot reserved so approved icons do not shift.
-// New student uses must go through StudentAvatar and its approved variants.
+// O espaço do estudante antigo fica reservado para não deslocar os ícones do atlas.
+// Novos usos do personagem passam pelo StudentAvatar e suas variantes aprovadas.
 const icons: (IconName | 'student')[] = [
   'student',
   'slime',

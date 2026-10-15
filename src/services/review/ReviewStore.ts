@@ -105,7 +105,7 @@ export class ReviewStore {
          * deixaria uma janela para outra aba salvar uma resposta que seria perdida
          * quando esta aba gravasse um estado antigo por cima.
          */
-        // Read inside the lock: stale tabs cannot overwrite newer responses.
+        // A leitura sob a trava impede que uma aba atrasada sobrescreva respostas novas.
         const latest = this.read(),
           now = this.ports.now(),
           command = makeCommand()

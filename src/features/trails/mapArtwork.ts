@@ -7,8 +7,8 @@
 
 export type WorldMapArtwork = Readonly<{ src: string; width: number; height: number }>
 
-// Byte-identical runtime copy of art/Mapa_test.png. Null is also supported,
-// without fetching a missing file or substituting another landscape.
+// A cópia pública é idêntica a art/Mapa_test.png. Também aceitamos ausência da arte,
+// sem solicitar um arquivo inexistente ou substituir a paisagem aprovada.
 export const officialWorldMap: WorldMapArtwork | null = {
   src: '/assets/maps/mathquest-world.png', width: 1672, height: 941,
 }

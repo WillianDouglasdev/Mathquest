@@ -63,7 +63,7 @@ export class PreferencesStore {
     preferences.musicVolume = volume(preferences.musicVolume, defaults.musicVolume)
     preferences.effectsVolume = volume(preferences.effectsVolume, defaults.effectsVolume)
     try {
-      // Never overwrite an unreadable snapshot implicitly.
+      // Uma falha de leitura não autoriza sobrescrever os dados existentes.
       if (this.view.error.startsWith('Não foi possível ler')) return
       this.storage.setItem(EXPERIENCE_KEY, JSON.stringify({ version: 1, preferences }))
       this.publish(preferences)

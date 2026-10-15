@@ -264,7 +264,7 @@ export function reviewTransition(
   }
 }
 
-// Replaying events is also used to verify counters and schedules on reload.
+// Reproduzir o histórico permite conferir contadores e agenda ao reabrir a página.
 export function replayHistory(
   history: ReviewEvent[],
 ): Record<string, CardProgress> {

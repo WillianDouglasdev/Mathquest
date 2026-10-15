@@ -5,7 +5,7 @@
  * JavaScript. Os demais componentes continuam presentes com a imagem estática.
  */
 
-// A small shared budget for student WebPs; no frame loop or browser dependency.
+// Limite compartilhado dos WebPs do estudante, sem ciclo de quadros em JavaScript.
 export class CharacterMotionSlots {
   private clients = new Map<symbol, number>()
   private granted = new Set<symbol>()

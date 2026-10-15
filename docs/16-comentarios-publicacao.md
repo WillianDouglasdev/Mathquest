@@ -22,6 +22,8 @@ Pontos detalhados:
 
 Os comentários explicam o código existente; não atribuem autoria, datas ou um histórico de trabalho inventado. Atribuições e licenças de arquivos existentes permanecem preservadas.
 
+Após o retorno do usuário, **44 comentários explicativos antigos em inglês, distribuídos por 28 arquivos**, também foram traduzidos para português. Nomes de APIs, identificadores do código, caminhos, licenças e diretivas como `@vitest-environment` foram preservados, pois não são textos explicativos a traduzir. A auditoria de comentários não encontrou outras explicações em inglês nos arquivos de código inspecionados, e a conferência de equivalência continuou sem diferenças de lógica, estilos ou assets.
+
 ## Verificação de equivalência
 
 O retrato anterior às edições está em `docs/reviews/commentary-vercel-v1/baseline.json`. O verificador compara o JavaScript emitido sem comentários e uma representação das regras CSS, além dos hashes dos assets de `art/` e `public/`.

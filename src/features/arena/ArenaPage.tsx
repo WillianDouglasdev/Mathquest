@@ -15,8 +15,8 @@ import { BattleScene } from './BattleScene'
 import { guardianLabels, guardianStates, type GuardianState } from './arenaArtwork'
 import styles from './ArenaPage.module.css'
 
-// Art-direction fixtures only: selecting a pose does not calculate damage,
-// complete a quest, write progress or grant rewards.
+// São amostras para conferir a arte. Selecionar uma pose não calcula dano,
+// conclui missão, salva progresso ou concede recompensas.
 const previews: Record<GuardianState, { hp: number; dialogue: string; description: string }> = {
   // Estes valores não são acumulados entre cliques. Eles servem para conferir
   // como o HUD fica cheio, baixo e zerado antes de existir um motor de batalha.

@@ -36,7 +36,7 @@ export type Command =
   | { type: 'select'; minutes: Duration }
   | { type: 'tick' | 'pause' | 'resume' | 'finish' | 'reset' }
 
-// Long gaps provide no evidence of uninterrupted execution. Do not credit them.
+// Lacunas longas não comprovam estudo contínuo e não recebem crédito de tempo.
 export const MAX_GAP_MS = 15_000
 export const CLOCK_TOLERANCE_MS = 2_000
 export const isActive = (session: Session | null) =>
@@ -126,7 +126,7 @@ function advance(state: FocusState, now: TimePoint): FocusState {
   // A última atualização pode passar da meta por alguns milissegundos.
   // O limite acima garante que o histórico receba somente o tempo da sessão.
   const last = segments.at(-1)
-  // Keep a continuous monotonic timeline despite sub-millisecond clock rounding.
+  // Preservamos a continuidade dos trechos apesar do arredondamento do relógio.
   const start =
     last && Math.abs(last.end - anchor.wallMs) < 5
       ? last.end

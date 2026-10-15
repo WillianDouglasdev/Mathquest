@@ -15,7 +15,7 @@ import { useStudentAnimationPolicy } from '../features/experience/ExperienceProv
 import { characterMotionSlots } from '../services/experience/CharacterMotionSlots'
 import { useCharacterVisibility } from './useCharacterVisibility'
 
-// Approved variants share one identity; each crop serves its own display size.
+// As variantes aprovadas têm a mesma identidade; cada recorte atende a um tamanho.
 export const studentAssets = {
   full: {
     src: '/assets/characters/student-v2-full.png',
@@ -82,7 +82,7 @@ export function StudentAvatar({
     if (celebration.type !== 'mission-completed' && celebration.type !== 'challenge-correct') return
     if (seen.current.size >= 1000) seen.current.delete(seen.current.values().next().value!)
     seen.current.add(celebration.id)
-    // Consume, but never queue/replay an event while hidden or movement is off.
+    // Registramos o evento como visto, sem enfileirar uma comemoração para depois.
     if (variant === 'full' && allowed && visible) setCelebrating(celebration.id)
   }, [celebration?.id, celebration?.type, allowed, visible, variant])
   useEffect(() => {
