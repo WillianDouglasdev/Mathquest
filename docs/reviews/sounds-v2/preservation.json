@@ -1,0 +1,31 @@
+{
+  "baselineFiles": 73,
+  "changed": [
+    "src/app/App.module.css",
+    "src/app/App.tsx",
+    "src/components/ui.tsx",
+    "src/features/dashboard/Dashboard.tsx",
+    "src/features/experience/ExperienceControls.module.css",
+    "src/features/experience/ExperienceControls.tsx",
+    "src/features/experience/ExperienceProvider.tsx",
+    "src/features/experience/SoundControls.tsx",
+    "src/features/experience/SoundProvider.tsx",
+    "src/features/focus/FocusPage.tsx",
+    "src/features/focus/FocusShortcut.tsx",
+    "src/features/review/FlashcardSection.tsx",
+    "src/services/experience/PreferencesStore.test.ts",
+    "src/services/experience/PreferencesStore.ts",
+    "src/services/experience/SoundService.ts",
+    "src/test/focus-mode.test.tsx"
+  ],
+  "unexpected": [],
+  "approvedAssetsPreserved": true,
+  "approvedAssetCount": 10,
+  "educationalRulesAndDataPreserved": true,
+  "adaptedTests": [
+    "src/services/experience/PreferencesStore.test.ts",
+    "src/test/focus-mode.test.tsx"
+  ],
+  "dependenciesPreserved": true,
+  "note": "Testes adaptados para efeitos ligados por padrão e som de abertura após interação; carregamento continua silencioso. Motores, progresso, dados, assets e demais testes preservados."
+}

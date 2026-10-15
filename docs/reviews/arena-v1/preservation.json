@@ -1,0 +1,73 @@
+{
+  "baselineFiles": 128,
+  "changed": [
+    "src/app/App.tsx",
+    "README.md"
+  ],
+  "unexpectedChanges": [],
+  "originalArtPreserved": true,
+  "previousRuntimeAssetsPreserved": true,
+  "previousTestsPreserved": true,
+  "assets": [
+    {
+      "source": "art/assets/background/arena-forest-ruins.png",
+      "runtime": "public/assets/arena/background/arena-forest-ruins.png",
+      "build": "dist/assets/arena/background/arena-forest-ruins.png",
+      "bytes": 1153154,
+      "width": 1536,
+      "height": 418,
+      "color": "RGB",
+      "sha256": "5ca07b36e62e5281cc46f7c3a465b586f0b8a19499b348c942d28ad9f51a4e4a",
+      "runtimeIdentical": true,
+      "buildIdentical": true
+    },
+    {
+      "source": "art/assets/guardian/guardian-idle.png",
+      "runtime": "public/assets/arena/guardian/guardian-idle.png",
+      "build": "dist/assets/arena/guardian/guardian-idle.png",
+      "bytes": 455010,
+      "width": 1254,
+      "height": 1254,
+      "color": "RGBA",
+      "sha256": "4d45a86956181a8be34cc696213b5323d33e784c5586a1485c652bad84ffbf29",
+      "runtimeIdentical": true,
+      "buildIdentical": true
+    },
+    {
+      "source": "art/assets/guardian/guardian-attack.png",
+      "runtime": "public/assets/arena/guardian/guardian-attack.png",
+      "build": "dist/assets/arena/guardian/guardian-attack.png",
+      "bytes": 630030,
+      "width": 1254,
+      "height": 1254,
+      "color": "RGBA",
+      "sha256": "3c3d8729e902de2c259217e844df9cd5d3802deacfbf3fe69a720bb4fda436d1",
+      "runtimeIdentical": true,
+      "buildIdentical": true
+    },
+    {
+      "source": "art/assets/guardian/guardian-damage.png",
+      "runtime": "public/assets/arena/guardian/guardian-damage.png",
+      "build": "dist/assets/arena/guardian/guardian-damage.png",
+      "bytes": 415541,
+      "width": 1254,
+      "height": 1254,
+      "color": "RGBA",
+      "sha256": "0cb9f449c5b7a8b625b27d973801bdc0ae213719a30769433037939d99855978",
+      "runtimeIdentical": true,
+      "buildIdentical": true
+    },
+    {
+      "source": "art/assets/guardian/guardian-defeated.png",
+      "runtime": "public/assets/arena/guardian/guardian-defeated.png",
+      "build": "dist/assets/arena/guardian/guardian-defeated.png",
+      "bytes": 372364,
+      "width": 1254,
+      "height": 1254,
+      "color": "RGBA",
+      "sha256": "6e8c27a47c2024cc3119e4035111fa7de22f4eadb87d1a551f86b0b21ac4eaa6",
+      "runtimeIdentical": true,
+      "buildIdentical": true
+    }
+  ]
+}

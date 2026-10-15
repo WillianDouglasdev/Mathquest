@@ -1,0 +1,155 @@
+/*
+ * A base visual separa títulos retrô e leitura contínua. Os tokens são compartilhados
+ *  por todas as páginas; cores e fontes específicas não precisam ser reinventadas
+ *  em cada card. O foco visível e a redução de movimento também começam aqui.
+ */
+
+@font-face {
+  font-family: Pixelify;
+  src: url('/assets/fonts/pixelify-latin.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400 700;
+}
+@font-face {
+  font-family: Nunito;
+  src: url('/assets/fonts/nunito-latin.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 200 900;
+}
+:root {
+  font-family: var(--font-body);
+  color: #102350;
+  background: #f4f8fd;
+  font-synthesis: none;
+  font-weight: 500;
+  --font-body: Nunito, 'Segoe UI', sans-serif;
+  --font-display: Pixelify, 'Courier New', monospace;
+  --navy: #102350;
+  --sidebar: #17457e;
+  --green: #80d65a;
+  --muted: #596e8d;
+  --border: #bed3e6;
+  --pixel: var(--font-display);
+  --sky: #eaf5ff;
+  --shadow: 0 3px 0 #d6e4f0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  color: inherit;
+}
+button:not(:disabled),
+a {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+a {
+  color: inherit;
+}
+button {
+  border-radius: 0;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #db8a00;
+  outline-offset: 4px;
+}
+button:disabled {
+  opacity: 0.6;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-body);
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  line-height: 1.6;
+}
+::selection {
+  background: #cdf4b3;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+small {
+  font-size: 12px;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+button svg {
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

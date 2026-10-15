@@ -1,0 +1,30 @@
+{
+  "afterReload": {
+    "guardian": "off",
+    "motion": "off",
+    "pose": "idle",
+    "student": "static"
+  },
+  "focusActive": {
+    "focus": "on",
+    "guardian": "off",
+    "motion": "off",
+    "student": "static",
+    "xp": "73"
+  },
+  "returnToFocus": {
+    "timer": "14:31",
+    "canPause": true
+  },
+  "defeated": {
+    "hp": "0",
+    "loaded": true,
+    "src": "/assets/arena/guardian/guardian-defeated.png",
+    "state": "defeated"
+  },
+  "console": [],
+  "capture": {
+    "status": "unavailable",
+    "reason": "Page.captureScreenshot excedeu o tempo de resposta nas duas abas de QA; nenhuma captura válida foi produzida."
+  }
+}

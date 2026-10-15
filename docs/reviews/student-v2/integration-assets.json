@@ -1,0 +1,57 @@
+{
+  "protectedAssets": [
+    {
+      "file": "public/assets/fonts/Nunito-LICENSE.txt",
+      "unchanged": true
+    },
+    {
+      "file": "public/assets/fonts/Pixelify-LICENSE.txt",
+      "unchanged": true
+    },
+    {
+      "file": "public/assets/fonts/nunito-latin.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/assets/fonts/pixelify-latin.woff2",
+      "unchanged": true
+    },
+    {
+      "file": "public/assets/landscape.png",
+      "unchanged": true
+    },
+    {
+      "file": "public/assets/sprites.png",
+      "unchanged": true
+    }
+  ],
+  "integratedAssets": [
+    {
+      "file": "public/assets/characters/student-v2-full.png",
+      "matchesApprovedCandidate": true,
+      "buildMatches": true,
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6,
+      "sha256": "6a87744c81d0f32f477806f6091fe70027a419582ff83fdd359204fbf91f4284"
+    },
+    {
+      "file": "public/assets/characters/student-v2-navigation.png",
+      "matchesApprovedCandidate": true,
+      "buildMatches": true,
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "sha256": "bd022c9a4f9d0101eb56ed9a497b68531641577d84fcf838a6f00ff47ea05f3e"
+    },
+    {
+      "file": "public/assets/characters/student-v2-ranking.png",
+      "matchesApprovedCandidate": true,
+      "buildMatches": true,
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 6,
+      "sha256": "4dc37f9a8edebaa2161ebf8e07beb19ba0a0953aa715fa099704ba9806a664ce"
+    }
+  ]
+}

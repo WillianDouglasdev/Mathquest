@@ -1,0 +1,62 @@
+{
+  "animatedCharacters": 2,
+  "brokenImages": [],
+  "cloudLayers": [
+    {
+      "className": "mq-clouds mq-clouds--sidebar _sideClouds_fsi30_713",
+      "duration": "110s",
+      "parentTransform": "none"
+    },
+    {
+      "className": "mq-clouds",
+      "duration": "100s",
+      "parentTransform": "none"
+    }
+  ],
+  "decorativeMotion": "on",
+  "mascot": [
+    {
+      "animation": "mq-idle",
+      "duration": "12s"
+    },
+    {
+      "animation": "mq-idle",
+      "duration": "12s"
+    }
+  ],
+  "profile": {
+    "height": 176,
+    "img": [
+      {
+        "fit": "contain",
+        "loaded": true,
+        "rendering": "pixelated",
+        "src": "/assets/animations/characters/student-full-idle.webp"
+      }
+    ]
+  },
+  "star": [
+    {
+      "animation": "mq-sparkle",
+      "duration": "18s"
+    }
+  ],
+  "xp": [
+    {
+      "duration": "0.35s",
+      "iterations": "1"
+    },
+    {
+      "duration": "0.35s",
+      "iterations": "1"
+    },
+    {
+      "duration": "0.35s",
+      "iterations": "1"
+    },
+    {
+      "duration": "0.35s",
+      "iterations": "1"
+    }
+  ]
+}

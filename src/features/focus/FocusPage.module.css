@@ -1,0 +1,656 @@
+/*
+ * O tomate é uma ilustração; tempo, controles e mensagens continuam em HTML.
+ *  A composição precisa comportar durações, pausas e avisos de armazenamento sem
+ *  esconder as ações. Em telas menores, os blocos seguem uma ordem de leitura única.
+ */
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.heading > div {
+  flex: 1;
+  min-width: 0;
+}
+.heading h1 {
+  margin: 5px 0 8px;
+}
+.heading p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+  color: #5b7896;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+}
+.timerCard,
+.history {
+  grid-column: span 7;
+}
+.weekCard,
+.encouragement {
+  grid-column: span 5;
+}
+.cardHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.cardHeading h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+}
+.cardHeading h2 > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+.cardHeading > span:not([class]) {
+  font-size: 12px;
+  color: var(--muted);
+}
+.description {
+  color: var(--muted);
+  font-size: 14px;
+}
+.timerBody {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 20px 0;
+}
+.tomato {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  max-width: 310px;
+  margin: auto;
+}
+.tomato > img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+.timerDisplay {
+  position: absolute;
+  left: 18.5%;
+  width: 65%;
+  top: 49%;
+  height: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #071e3f;
+}
+.timerDisplay time {
+  font-family: var(--pixel);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.artPending {
+  display: block;
+  min-height: 240px;
+  background: #e8f1f9;
+  padding: 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.settings {
+  flex: 1;
+  min-width: 0;
+}
+.settings fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.settings legend {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.durations {
+  display: flex;
+  gap: 9px;
+}
+.durations button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 70px;
+  padding: 7px;
+  background: #f3f8ff;
+  border: 2px solid #d0dfed;
+  box-shadow: 0 2px #dbe6f1;
+}
+.durations strong {
+  font: 800 28px var(--font-body);
+}
+.durations span {
+  font-size: 13px;
+}
+.durations button[aria-pressed='true'] {
+  background: #a0e477;
+  border-color: #335f57;
+  box-shadow:
+    inset 2px 2px #d4f5bb,
+    0 2px #274d68;
+}
+.tip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #edf5ff;
+  border: 1px solid #cfdeef;
+  padding: 12px;
+  margin-top: 17px;
+  border-radius: 5px;
+}
+.tip p {
+  font-size: 14px;
+  color: #536f93;
+  line-height: 1.5;
+}
+.stateLabel {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  color: #356d42;
+  padding-top: 12px;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+}
+.controls > button {
+  flex: 1;
+  min-width: 0;
+  font-size: 21px;
+  padding: 10px 9px;
+  min-height: 52px;
+}
+.controls > button:nth-child(2) {
+  font-family: var(--font-body);
+  font-size: 21px;
+  border: 2px solid #a9bfd6;
+}
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 21px 0 11px;
+}
+.progressRow > div {
+  flex: 1;
+  height: 14px;
+}
+.progressRow > span {
+  font-size: 12px;
+  color: #506c8f;
+  white-space: nowrap;
+}
+.timerFooter {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: space-between;
+}
+.timerFooter p {
+  font-size: 14px;
+  color: #5e7593;
+}
+.timerFooter button {
+  min-height: 44px;
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  color: #315b8c;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px;
+}
+.live {
+  margin-top: 10px;
+  background: #f1f8ee;
+  border-left: 3px solid #8dca73;
+  padding: 10px 12px;
+  color: #396448;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 56px;
+}
+.metrics {
+  display: flex;
+  gap: 24px;
+  padding: 18px 0 22px;
+}
+.metrics > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.metrics strong {
+  font: 700 36px var(--pixel);
+}
+.metrics small {
+  font-size: 22px;
+}
+.metrics > div > span {
+  font-size: 12px;
+  color: #526d8e;
+}
+.chart {
+  height: 174px;
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  margin: 8px 0 20px;
+}
+.chart > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  color: #456384;
+}
+.barTrack {
+  height: 125px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 28px;
+  border-bottom: 2px solid #b8cfdd;
+  background: #f3f8f2;
+}
+.barTrack > i {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  background: repeating-linear-gradient(90deg, #69c64f 0 7px, #7bd660 7px 14px);
+  box-shadow: inset 0 2px #a1e187;
+}
+.today {
+  background: #eef7e9;
+  border: 1px solid #cce5be;
+  padding: 13px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 12px;
+  font-size: 12px;
+  color: #345c3b;
+}
+.today > span:last-child {
+  grid-column: 1/-1;
+  font-size: 12px;
+}
+.calendar {
+  font-size: 12px;
+  color: #5e7593;
+  text-align: center;
+  margin-top: 14px;
+}
+.empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+  padding: 28px 16px;
+}
+.empty h3 {
+  font-size: 24px;
+}
+.empty p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.sessionList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  max-height: 430px;
+  overflow: auto;
+}
+.sessionList li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #dde8f1;
+  flex-wrap: wrap;
+}
+.sessionList li > span:first-child {
+  flex: 1;
+  min-width: 140px;
+}
+.sessionList strong {
+  font-size: 13px;
+  display: block;
+}
+.sessionList small {
+  display: block;
+  font-size: 12px;
+  color: #647b98;
+  margin-top: 3px;
+}
+.sessionList li > span:nth-child(2) {
+  font-size: 12px;
+  color: #526d8e;
+}
+.encouragement {
+  background:
+    linear-gradient(#fffffff2, #f8fcffe6),
+    url('/assets/landscape.png') center bottom/cover;
+}
+.encouragement > div:nth-child(2) {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 28px 0;
+}
+.encouragement p {
+  color: #526d8e;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.encouragement > p {
+  font-size: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #d7e5ef;
+}
+.privacy {
+  font-size: 12px;
+  color: #596f8e;
+  text-align: center;
+  padding: 22px 10px 0;
+}
+.alert,
+.controlNotice {
+  padding: 14px 18px;
+  border: 1px solid #ddb95b;
+  background: #fff7dc;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.alert p,
+.controlNotice p {
+  font-size: 14px;
+}
+.alert button,
+.controlNotice button {
+  flex-shrink: 0;
+}
+.controlNotice {
+  background: #edf5ff;
+  border-color: #bacfe6;
+}
+.shortcut {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 17px;
+  margin-bottom: 26px;
+  background: #edf7e7;
+  border: 2px solid #c4ddb6;
+  box-shadow: 0 2px #deead6;
+}
+.shortcutIcon {
+  width: 38px;
+  height: 38px;
+  background: url('/assets/focus/tomato.png') center/contain no-repeat;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+.shortcut > span:nth-child(2) {
+  flex: 1;
+}
+.shortcut strong {
+  font: 700 23px var(--pixel);
+  display: block;
+}
+.shortcut small {
+  display: block;
+  font-size: 12px;
+  color: #4e7152;
+  margin-top: 3px;
+}
+.shortcut > span:last-child {
+  font:
+    24px Arial,
+    sans-serif;
+}
+.shortcut:hover {
+  background: #e1f4d5;
+}
+@media (max-width: 1200px) {
+  .timerBody {
+    gap: 14px;
+  }
+  .cardHeading h2 {
+    font-size: 22px;
+  }
+  .timerDisplay time {
+    font-size: 39px;
+  }
+  .timerCard .cardHeading > span {
+    font-size: 12px;
+  }
+  .controls {
+    gap: 8px;
+  }
+  .controls > button,
+  .controls > button:nth-child(2) {
+    font-size: 19px;
+  }
+  .metrics {
+    gap: 14px;
+  }
+  .metrics strong {
+    font-size: 32px;
+  }
+  .chart {
+    gap: 8px;
+  }
+  .heading > span:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .timerCard,
+  .weekCard,
+  .history,
+  .encouragement {
+    grid-column: span 12;
+  }
+  .timerBody {
+    gap: 30px;
+  }
+  .tomato {
+    max-width: 270px;
+  }
+  .timerDisplay time {
+    font-size: 47px;
+  }
+  .weekCard .chart {
+    height: 170px;
+  }
+  .metrics {
+    padding-block: 10px;
+  }
+  .encouragement > div:nth-child(2) {
+    margin: 16px 0;
+  }
+  .heading h1 {
+    font-size: 36px;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .heading {
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .heading > span:first-child {
+    width: 68px !important;
+    height: 78px !important;
+  }
+  .heading h1 {
+    font-size: 31px;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+  .eyebrow {
+    font-size: 12px;
+  }
+  .timerBody {
+    gap: 16px;
+  }
+  .cardHeading h2 {
+    font-size: 22px;
+  }
+  .grid {
+    gap: 24px;
+  }
+  .alert,
+  .controlNotice {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .controls > button,
+  .controls > button:nth-child(2) {
+    font-size: 21px;
+  }
+  .shortcut strong {
+    font-size: 22px;
+  }
+  .shortcut small {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .timerBody {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tomato {
+    width: 240px;
+    max-width: 100%;
+    flex: auto;
+  }
+  .timerDisplay time {
+    font-size: 44px;
+  }
+  .settings {
+    width: 100%;
+  }
+  .settings legend {
+    font-size: 13px;
+  }
+  .durations button {
+    min-height: 65px;
+  }
+  .tip {
+    margin-top: 13px;
+  }
+  .controls {
+    flex-wrap: wrap;
+  }
+  .controls > button:first-child {
+    flex-basis: 100%;
+  }
+  .controls > button {
+    flex-basis: 40%;
+  }
+  .timerFooter {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .timerFooter p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .progressRow {
+    gap: 8px;
+  }
+  .progressRow > span {
+    font-size: 12px;
+  }
+  .sessionList li {
+    gap: 10px;
+  }
+  .sessionList li > span:first-child {
+    min-width: 110px;
+  }
+  .sessionList .badge {
+    font-size: 12px;
+  }
+  .encouragement > div:nth-child(2) {
+    gap: 8px;
+  }
+  .encouragement > div:nth-child(2) > span {
+    width: 65px !important;
+    height: 65px !important;
+  }
+  .heading h1 {
+    font-size: 28px;
+  }
+  .heading > span:first-child {
+    width: 52px !important;
+    height: 68px !important;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+  .cardHeading {
+    gap: 8px;
+  }
+  .cardHeading > span {
+    font-size: 12px;
+  }
+  .metrics strong {
+    font-size: 32px;
+  }
+  .shortcut {
+    padding: 11px;
+  }
+  .shortcut strong {
+    font-size: 20px;
+  }
+  .shortcut small {
+    font-size: 12px;
+  }
+}

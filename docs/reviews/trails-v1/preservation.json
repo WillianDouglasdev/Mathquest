@@ -1,0 +1,22 @@
+{
+  "baselineFiles": 110,
+  "changed": [
+    "src/app/App.tsx",
+    "src/test/dashboard.test.tsx"
+  ],
+  "unexpected": [],
+  "existingAssetsPreserved": true,
+  "existingAssetCount": 16,
+  "existingBuildAssetsIdentical": true,
+  "protectedFilesPreserved": true,
+  "map": {
+    "source": "art/Mapa_test.png",
+    "published": "public/assets/maps/mathquest-world.png",
+    "bytes": 3027793,
+    "sha256": "923614e2a3126a0a8db3cd73729d0053c42b35f0c93511408a5ec93b57eb0b7a",
+    "sourcePreserved": true,
+    "runtimeIdentical": true,
+    "buildIdentical": true
+  },
+  "dependenciesPreserved": true
+}

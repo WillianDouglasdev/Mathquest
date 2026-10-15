@@ -1,0 +1,5 @@
+Integre **somente a etapa visual da MathQuest Arena** com os assets anexados do pacote. Inspecione primeiro a estrutura atual do frontend e os arquivos existentes; não substitua o personagem estudante ou o slime verde.
+
+Use `arena-forest-ruins.png` como fundo de batalha e os quatro arquivos `guardian-*.png` para estados visuais do Guardião da Lógica. Não use a imagem `preview-arena.png` como fundo funcional. O cenário é panorâmico: mantenha proporção e controle de recorte responsivo. Implemente um componente GuardianSprite com estados idle, attack, damage, defeated, testável e sem temporizadores globais não limpos.
+
+A interface de HP, textos e controles deve ser React, sobreposta ao cenário. Respeite Modo Foco e preferência de movimento reduzido. Não simule IA real nem conceda XP global. Mantenha rotas e funcionalidades atuais. Execute testes e build, e indique que a validação visual precisa de navegador. Faça só a integração dos assets e a cena visual; aguarde validação antes de criar motor de HP e correção.

@@ -1,0 +1,15 @@
+{
+  "baselineFiles": 48,
+  "changed": [
+    "src/app/App.module.css",
+    "src/components/ui.module.css",
+    "src/features/dashboard/Dashboard.module.css",
+    "src/features/focus/FocusPage.module.css",
+    "src/features/review/FlashcardSection.module.css",
+    "src/styles/global.css"
+  ],
+  "onlyCssChanged": true,
+  "approvedAssetCount": 10,
+  "approvedAssetsPreserved": true,
+  "logicComponentsTestsAndDependenciesPreserved": true
+}

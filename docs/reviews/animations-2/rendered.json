@@ -1,0 +1,95 @@
+{
+  "enabled": {
+    "animatedStudents": 2,
+    "broken": [],
+    "clouds": [
+      {
+        "before": "mq-cloud",
+        "duration": "110s",
+        "parentTransform": "none",
+        "transform": "matrix(1, 0, 0, 1, 24, 0)"
+      },
+      {
+        "before": "mq-cloud",
+        "duration": "100s",
+        "parentTransform": "none",
+        "transform": "matrix(1, 0, 0, 1, 29, 0)"
+      }
+    ],
+    "mascot": [
+      {
+        "animation": "mq-idle",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "animation": "mq-idle",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "motion": "on",
+    "profile": {
+      "height": 176,
+      "image": [
+        {
+          "imageRendering": "pixelated",
+          "loaded": true,
+          "objectFit": "contain",
+          "src": "/assets/animations/characters/student-full-idle.webp"
+        }
+      ]
+    },
+    "viewport": [
+      1440,
+      1080
+    ],
+    "xp": [
+      {
+        "animation": "none",
+        "transform": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transform": "none",
+        "transition": "0s"
+      }
+    ]
+  },
+  "disabled": {
+    "characters": [
+      "static",
+      "static",
+      "static",
+      "static",
+      "static",
+      "static",
+      "static",
+      "static"
+    ],
+    "clouds": [
+      "none",
+      "none"
+    ],
+    "mascot": [
+      "none",
+      "none"
+    ],
+    "mode": "off",
+    "star": [
+      "none"
+    ]
+  },
+  "focus": {
+    "characters": [
+      "static",
+      "static",
+      "static"
+    ],
+    "clouds": [
+      "none",
+      "none"
+    ],
+    "decorative": "off",
+    "focus": "on"
+  }
+}

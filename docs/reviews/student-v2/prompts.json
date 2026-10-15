@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen (ferramenta integrada)",
+  "status": "Propostas para validação visual; não integradas à aplicação",
+  "reference": "Estudante da UX original na imagem Revisão e Foco anexada pelo usuário; corpo inteiro gerado como referência compartilhada para os dois formatos menores",
+  "prompts": [
+    {
+      "file": "full-body-candidate.png",
+      "prompt": "Use case: identity-preserve. Input: the most recent USER attached image, the MathQuest Revisão e Foco UX screen. Reference target: ONLY the small full-body brown-haired student next to the heading Revisão e Foco at top left of the main white area. Ignore every other image or existing generated avatar. Primary request: faithfully reconstruct and isolate that UX student as a standalone transparent full-body character for visual approval. This is NOT a redesign of the UI. Match the source student's silhouette, friendly simple dot eyes, chestnut brown spiky side-swept hair, light warm skin, blue short jacket and blue/teal shirt, clear green clothing accents, visible yellow-green backpack and shoulder straps, brown/tan shorts and shoes. Cheerful young student adventurer, compact proportions, large head, small body, slight three-quarter front view facing a little right, arms naturally holding backpack straps. Style: authentic chunky low-resolution 8-bit/16-bit RPG sprite as in the supplied UX screen; very simple clean pixel clusters, consistent square pixels, dark navy stepped outlines. Design on a logical 64 by 96 pixel grid and show with nearest-neighbor enlargement; no tiny noisy pixels, no smooth gradients, no painted highlights, no anime-style shiny oversized eyes. Preserve the particular source character and blue/green costume rather than the generic overly detailed avatar generated earlier. Composition: ONE complete character centered, entire hair, backpack, hands and feet visible with ample transparent margins. No ground shadow, no scenery, no labels, no lettering, no UI, no extra character, no frames. Actual transparent background. This is a proposed full-body master; subsequent portrait and tiny ranking avatar must derive from this exact identity."
+    },
+    {
+      "file": "navigation-portrait-candidate.png"
+    },
+    {
+      "file": "ranking-avatar-candidate.png"
+    }
+  ]
+}

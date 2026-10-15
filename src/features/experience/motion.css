@@ -1,0 +1,41 @@
+/*
+ * Os movimentos decorativos são leves e reutilizáveis. A maior parte usa transform
+ *  ou opacity para não recalcular o layout a cada frame. Os loops ambientais são
+ *  lentos; preferências de movimento e Modo Foco removem a animação sem ocultar dados.
+ */
+
+/* Reusable decorative motion; original raster assets are never changed. */
+@keyframes mq-idle { 0%, 70%, 100% { transform: translateY(0); } 80%, 90% { transform: translateY(-2px); } }
+@keyframes mq-flag { 0%, 100% { transform: skewY(-2deg); } 50% { transform: skewY(3deg); } }
+@keyframes mq-cloud { from { transform: translateX(-24px); } to { transform: translateX(80px); } }
+@keyframes mq-reward { from { opacity: 0; transform: translateY(4px) scale(.95); } to { opacity: 1; transform: none; } }
+@keyframes mq-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes mq-shine { 0%, 85%, 100% { opacity: 0; } 90% { opacity: .45; } 95% { opacity: .15; } }
+@keyframes mq-sparkle { 0%, 82%, 100% { opacity: .65; } 88% { opacity: 1; } 94% { opacity: .8; } }
+.mq-mascot { animation: mq-idle 12s steps(2, end) infinite; }
+.mq-sparkle { animation: mq-sparkle 18s ease-in-out infinite; }
+.mq-flag { animation: mq-flag 6s steps(3, end) infinite; transform-origin: left center; }
+.mq-reward { animation: mq-reward .3s ease-out both; }
+.mq-trophy::after { content: ''; position: absolute; width: 9px; height: 12px; top: 5%; right: 8%; background: #e7ae14; clip-path: polygon(50% 0,65% 35%,100% 50%,65% 65%,50% 100%,35% 65%,0 50%,35% 35%); animation: mq-shine 14s ease-in-out infinite; pointer-events: none; }
+.mq-progress > span { transform-origin: left; animation: mq-grow .35s ease-out; transition: width .25s ease-out; }
+/* XP stays still, including first paint; other progress feedback is preserved. */
+.mq-progress--static > span { animation: none; transition: none; }
+.mq-clouds { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.mq-clouds::before, .mq-clouds::after {
+  content: '';
+  position: absolute;
+  width: 104px;
+  height: 36px;
+  top: 12px;
+  left: 30%;
+  background: #ffffff90;
+  clip-path: polygon(0 60%,15% 60%,15% 35%,35% 35%,35% 0,65% 0,65% 25%,80% 25%,80% 60%,100% 60%,100% 100%,0 100%);
+  animation: mq-cloud 100s steps(104, end) infinite alternate;
+}
+.mq-clouds::after { top: 58px; left: 62%; width: 74px; height: 26px; animation-duration: 130s; animation-direction: alternate-reverse; }
+/* Separate layers stay behind the quote; no transform touches the landscape. */
+.mq-clouds--sidebar::before { top: 18px; left: 4%; width: 76px; height: 28px; background: #ffffff65; animation-duration: 110s; }
+.mq-clouds--sidebar::after { top: 52px; left: 48%; width: 56px; height: 20px; background: #ffffff55; animation-duration: 140s; }
+.mq-tomato[data-state='completed'] { animation: mq-reward .4s ease-out; }
+[data-decorative-motion='off'] *, [data-decorative-motion='off'] *::before, [data-decorative-motion='off'] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "student-avatar-still.png",
+    "status": 200,
+    "bytes": 7461
+  },
+  {
+    "file": "student-full-celebrate.webp",
+    "status": 200,
+    "bytes": 236612
+  },
+  {
+    "file": "student-full-idle.webp",
+    "status": 200,
+    "bytes": 125574
+  },
+  {
+    "file": "student-full-still.png",
+    "status": 200,
+    "bytes": 31646
+  },
+  {
+    "file": "student-portrait-idle.webp",
+    "status": 200,
+    "bytes": 97958
+  },
+  {
+    "file": "student-portrait-still.png",
+    "status": 200,
+    "bytes": 24570
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen.imagegen (integrada)",
+  "file": "public/assets/focus/tomato.png",
+  "transparent_background": true,
+  "prompt": "Use case: stylized-concept. Asset type: single transparent PNG reusable illustration for MathQuest educational 8-bit RPG Pomodoro. Create one friendly large tomato-shaped kitchen timer, front view, symmetrical red tomato silhouette with vivid green leafy top and short stem. Authentic chunky pixel art with dark navy stepped outlines matching a cheerful retro RPG UI. Rich red/coral flat square color clusters, simple few highlights, no painterly texture. The center has a large BLANK dark navy horizontal rectangular display, approximately 65 percent of total tomato width and 27 percent of height, centered at 55 percent of overall height, intended for live HTML countdown text overlay. No numbers, no letters, no text. Tiny dark dial at lower center of tomato. Whole tomato fully visible with small transparent margins. Intended use 270px wide web interface illustration with white cards, blue and green buttons. Crisp square pixels, consistent grid, no smooth vector curves, no gradients, no glow, no background, no shadow outside tomato, no UI buttons. Transparent background. Logical 96x96 pixel design enlarged with nearest-neighbor."
+}

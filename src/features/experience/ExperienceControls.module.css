@@ -1,0 +1,39 @@
+/*
+ * As configurações precisam ser fáceis de encontrar sem competir com o estudo.
+ *  O painel mantém música e efeitos como escolhas separadas, com labels legíveis
+ *  e espaço para controles de volume também em telas pequenas.
+ */
+
+.panel { margin: 0 0 24px; background: #f4f9ff; border: 2px solid #88b4dd; border-radius: 5px; font-size: 14px; box-shadow: 0 3px 0 #d6e4f0; scroll-margin-top: 16px; }
+.panel summary { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 14px; cursor: pointer; padding: 14px 16px; font-weight: 800; min-height: 78px; background: linear-gradient(110deg, #e5f2ff, #f1faec); list-style: none; }
+.panel summary::-webkit-details-marker { display: none; }
+.speaker { display: grid; place-items: center; width: 44px; height: 44px; border: 2px solid #5f98c9; background: #fff; color: #17457e; box-shadow: 2px 2px 0 #bed3e6; }
+.summaryCopy { display: flex; flex-direction: column; min-width: 0; gap: 2px; }
+.summaryCopy > span { font-size: 12px; color: #496989; }
+.summaryCopy strong { font-size: 18px; line-height: 1.3; }
+.summaryCopy small { font-size: 13px; color: #3c5d7b; font-weight: 600; }
+.soundState { padding: 6px 9px; color: #26533b; background: #e0f3d9; border: 1px solid #a6ce98; font-size: 12px; text-align: center; }
+.chevron { font-size: 24px; color: #17457e; }
+.shortcut { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 44px; min-height: 44px; padding: 6px 10px; border: 2px solid #88b4dd; background: #fff; color: #17457e; border-radius: 5px; font-weight: 800; font-size: 14px; }
+.shortcut:hover { background: #edf8e5; }
+@media (max-width: 480px) {
+  .panel summary { grid-template-columns: auto 1fr auto; gap: 10px; padding: 12px; }
+  .summaryCopy strong { font-size: 16px; }
+  .soundState { grid-column: 2; justify-self: start; }
+  .chevron { grid-column: 3; grid-row: 1 / 3; }
+  .shortcut { width: 44px; padding: 6px; }
+  .shortcut > span { display: none; }
+}
+.panel summary:focus-visible { outline: 3px solid #b17100; outline-offset: 3px; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 4px 16px 16px; }
+.controls label { display: flex; align-items: center; gap: 8px; min-height: 44px; font-size: 14px; }
+.controls input[type='checkbox'] { width: 20px; height: 20px; accent-color: #367e38; }
+.controls p { color: var(--muted); font-size: 14px; flex-basis: 100%; }
+.radio { flex: 1 1 100%; min-width: 0; margin: 0; padding: 16px; border: 1px solid var(--border); background: #fff; }
+.radio legend { font-weight: 800; padding-inline: 6px; }
+.radio select { font: inherit; min-height: 44px; max-width: 100%; padding: 6px 10px; border: 1px solid var(--border); background: #f1f7ff; }
+.radio label { flex-wrap: wrap; }
+.playerRow { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 12px; }
+.playerRow label { flex: 1 1 210px; min-width: 0; }
+.playerRow select { width: 100%; }
+.playerRow input { max-width: 100%; min-height: 44px; accent-color: #367e38; }

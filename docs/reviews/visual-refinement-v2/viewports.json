@@ -1,0 +1,56 @@
+[
+  {
+    "height": 1080,
+    "imagesBroken": 0,
+    "overflow": false,
+    "overlap": false,
+    "profileHeight": 176,
+    "sidebarScrollHeight": 1080,
+    "width": 1440
+  },
+  {
+    "height": 900,
+    "imagesBroken": 0,
+    "overflow": false,
+    "overlap": false,
+    "profileHeight": 176,
+    "sidebarScrollHeight": 900,
+    "width": 1024
+  },
+  {
+    "height": 768,
+    "imagesBroken": 0,
+    "overflow": false,
+    "overlap": false,
+    "profileHeight": 117.59375,
+    "sidebarScrollHeight": 768,
+    "width": 1024
+  },
+  {
+    "height": 1024,
+    "imagesBroken": 0,
+    "overflow": false,
+    "overlap": false,
+    "profileHeight": 176,
+    "sidebarScrollHeight": 1024,
+    "width": 768
+  },
+  {
+    "height": 844,
+    "imagesBroken": 0,
+    "overflow": false,
+    "overlap": false,
+    "profileHeight": 117.59375,
+    "sidebarScrollHeight": 844,
+    "width": 390
+  },
+  {
+    "height": 720,
+    "imagesBroken": 0,
+    "overflow": false,
+    "overlap": false,
+    "profileHeight": 117.59375,
+    "sidebarScrollHeight": 723,
+    "width": 320
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "final": {
+    "broken": [],
+    "character": "floresta",
+    "current": "map-region-floresta",
+    "image": [
+      {
+        "fit": "contain",
+        "height": 941,
+        "loaded": true,
+        "rendering": "pixelated",
+        "width": 1672
+      }
+    ],
+    "motion": "on",
+    "progress": "38",
+    "pulse": "_currentGlow_cjz9h_1",
+    "route": "/trilhas",
+    "selected": "map-region-floresta",
+    "viewport": [
+      1440,
+      1080
+    ]
+  },
+  "animationsEnabled": {
+    "pulse": "_currentGlow_ud6az_1",
+    "root": "on"
+  },
+  "animationsDisabled": {
+    "character": "static",
+    "pulse": "none",
+    "root": "off"
+  },
+  "focus": {
+    "character": "static",
+    "focus": "on",
+    "motion": "off",
+    "pulse": "none",
+    "xp": "73"
+  }
+}

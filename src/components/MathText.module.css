@@ -1,0 +1,15 @@
+/*
+ * O estilo da expressão acompanha a fonte legível do conteúdo educacional.
+ *  A decoração retrô não deve alterar a relação visual entre numerador, denominador
+ *  e expoentes, que é parte do significado da matemática.
+ */
+
+.text math {
+  font-family: 'Cambria Math', 'STIX Two Math', math;
+  font-size: 1.12em;
+  math-style: normal;
+  margin-inline: 0.12em;
+}
+.text {
+  line-height: 1.8;
+}

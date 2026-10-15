@@ -1,0 +1,552 @@
+{
+  "files": [
+    {
+      "path": "art/characters/student-avatar-celebrate.webp",
+      "bytes": 58784,
+      "sha256": "e86d04d170697912461eae4c09a5001320171d3f2d68c3c990e1d0dcaed3442c",
+      "format": "WEBP",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 10,
+      "durationMs": 1000,
+      "frameDurations": [
+        100
+      ],
+      "loop": 0,
+      "transparentFrames": 10,
+      "uniqueFrames": 10
+    },
+    {
+      "path": "art/characters/student-avatar-idle.webp",
+      "bytes": 31000,
+      "sha256": "035caeb6d9aad7d75fb0c68b3c83aa1803df9dba5cb765cc8ae4ec3930b1f040",
+      "format": "WEBP",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "art/characters/student-avatar-still.png",
+      "bytes": 7461,
+      "sha256": "770ac34d044c018008ae5cad103401bb6098332398fdddaa897cb7428b4cfd00",
+      "format": "PNG",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "art/characters/student-full-celebrate.webp",
+      "bytes": 236612,
+      "sha256": "5356ed9bf0ef842fc0745dc9fb272febc6988effc4b8b441380cff11397a3754",
+      "format": "WEBP",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 10,
+      "durationMs": 1000,
+      "frameDurations": [
+        100
+      ],
+      "loop": 0,
+      "transparentFrames": 10,
+      "uniqueFrames": 10
+    },
+    {
+      "path": "art/characters/student-full-idle.webp",
+      "bytes": 125574,
+      "sha256": "c0c06e8957517eeb80855dd4271af893605a2b1388778a4a879b2b52e54dfaf4",
+      "format": "WEBP",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "art/characters/student-full-still.png",
+      "bytes": 31646,
+      "sha256": "e8a8d6d55ee9706a97c89a240c24cfa11905badff1e1074d51ce9b275838dbde",
+      "format": "PNG",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "art/characters/student-portrait-celebrate.webp",
+      "bytes": 184964,
+      "sha256": "a4201903c6f700b2a7273eb937f5cb4ac6ce83313f5e717f6f41da79baf4cccc",
+      "format": "WEBP",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 10,
+      "durationMs": 1000,
+      "frameDurations": [
+        100
+      ],
+      "loop": 0,
+      "transparentFrames": 10,
+      "uniqueFrames": 10
+    },
+    {
+      "path": "art/characters/student-portrait-idle.webp",
+      "bytes": 97958,
+      "sha256": "ef127d0fa4fadf860a8ebaf05bc61911fbf44704112f95079115aeb9e17c0f50",
+      "format": "WEBP",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "art/characters/student-portrait-still.png",
+      "bytes": 24570,
+      "sha256": "73bc030cde07b383628668689d373104068d50a9238d64218c74732fb7453e8b",
+      "format": "PNG",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "art/previews/student-avatar-idle.gif",
+      "bytes": 11502,
+      "sha256": "731f7a6d0146e3315e1c567e06673c119081589cad3527c84b3ba957f981539d",
+      "format": "GIF",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "art/previews/student-full-idle.gif",
+      "bytes": 34022,
+      "sha256": "b640feeebc473214106dbab1200327f85b9e94c11cbb5042b3a10c157afc54f3",
+      "format": "GIF",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "art/previews/student-portrait-idle.gif",
+      "bytes": 24317,
+      "sha256": "e0a48e2ad37838d83575186ff12635b9fc1fe1330a6f539eb95fb31208067951",
+      "format": "GIF",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "characters/student-avatar-celebrate.webp",
+      "bytes": 58784,
+      "sha256": "e86d04d170697912461eae4c09a5001320171d3f2d68c3c990e1d0dcaed3442c",
+      "format": "WEBP",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 10,
+      "durationMs": 1000,
+      "frameDurations": [
+        100
+      ],
+      "loop": 0,
+      "transparentFrames": 10,
+      "uniqueFrames": 10
+    },
+    {
+      "path": "characters/student-avatar-idle.webp",
+      "bytes": 31000,
+      "sha256": "035caeb6d9aad7d75fb0c68b3c83aa1803df9dba5cb765cc8ae4ec3930b1f040",
+      "format": "WEBP",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "characters/student-avatar-still.png",
+      "bytes": 7461,
+      "sha256": "770ac34d044c018008ae5cad103401bb6098332398fdddaa897cb7428b4cfd00",
+      "format": "PNG",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "characters/student-full-celebrate.webp",
+      "bytes": 236612,
+      "sha256": "5356ed9bf0ef842fc0745dc9fb272febc6988effc4b8b441380cff11397a3754",
+      "format": "WEBP",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 10,
+      "durationMs": 1000,
+      "frameDurations": [
+        100
+      ],
+      "loop": 0,
+      "transparentFrames": 10,
+      "uniqueFrames": 10
+    },
+    {
+      "path": "characters/student-full-idle.webp",
+      "bytes": 125574,
+      "sha256": "c0c06e8957517eeb80855dd4271af893605a2b1388778a4a879b2b52e54dfaf4",
+      "format": "WEBP",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "characters/student-full-still.png",
+      "bytes": 31646,
+      "sha256": "e8a8d6d55ee9706a97c89a240c24cfa11905badff1e1074d51ce9b275838dbde",
+      "format": "PNG",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "characters/student-portrait-celebrate.webp",
+      "bytes": 184964,
+      "sha256": "a4201903c6f700b2a7273eb937f5cb4ac6ce83313f5e717f6f41da79baf4cccc",
+      "format": "WEBP",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 10,
+      "durationMs": 1000,
+      "frameDurations": [
+        100
+      ],
+      "loop": 0,
+      "transparentFrames": 10,
+      "uniqueFrames": 10
+    },
+    {
+      "path": "characters/student-portrait-idle.webp",
+      "bytes": 97958,
+      "sha256": "ef127d0fa4fadf860a8ebaf05bc61911fbf44704112f95079115aeb9e17c0f50",
+      "format": "WEBP",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "characters/student-portrait-still.png",
+      "bytes": 24570,
+      "sha256": "73bc030cde07b383628668689d373104068d50a9238d64218c74732fb7453e8b",
+      "format": "PNG",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "previews/student-avatar-idle.gif",
+      "bytes": 11502,
+      "sha256": "731f7a6d0146e3315e1c567e06673c119081589cad3527c84b3ba957f981539d",
+      "format": "GIF",
+      "width": 96,
+      "height": 96,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "previews/student-full-idle.gif",
+      "bytes": 34022,
+      "sha256": "b640feeebc473214106dbab1200327f85b9e94c11cbb5042b3a10c157afc54f3",
+      "format": "GIF",
+      "width": 192,
+      "height": 280,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "previews/student-portrait-idle.gif",
+      "bytes": 24317,
+      "sha256": "e0a48e2ad37838d83575186ff12635b9fc1fe1330a6f539eb95fb31208067951",
+      "format": "GIF",
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "animated": true,
+      "frames": 5,
+      "durationMs": 2000,
+      "frameDurations": [
+        250,
+        500
+      ],
+      "loop": 0,
+      "transparentFrames": 5,
+      "uniqueFrames": 3
+    },
+    {
+      "path": "public/assets/characters/student-v2-full.png",
+      "bytes": 1071758,
+      "sha256": "6a87744c81d0f32f477806f6091fe70027a419582ff83fdd359204fbf91f4284",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "public/assets/characters/student-v2-navigation.png",
+      "bytes": 894646,
+      "sha256": "bd022c9a4f9d0101eb56ed9a497b68531641577d84fcf838a6f00ff47ea05f3e",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    },
+    {
+      "path": "public/assets/characters/student-v2-ranking.png",
+      "bytes": 890397,
+      "sha256": "4dc37f9a8edebaa2161ebf8e07beb19ba0a0953aa715fa099704ba9806a664ce",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "animated": false,
+      "frames": 1,
+      "durationMs": 0,
+      "frameDurations": [
+        0
+      ],
+      "loop": null,
+      "transparentFrames": 1,
+      "uniqueFrames": 1
+    }
+  ],
+  "duplicateGroups": [
+    [
+      "art/characters/student-avatar-celebrate.webp",
+      "characters/student-avatar-celebrate.webp"
+    ],
+    [
+      "art/characters/student-avatar-idle.webp",
+      "characters/student-avatar-idle.webp"
+    ],
+    [
+      "art/characters/student-avatar-still.png",
+      "characters/student-avatar-still.png"
+    ],
+    [
+      "art/characters/student-full-celebrate.webp",
+      "characters/student-full-celebrate.webp"
+    ],
+    [
+      "art/characters/student-full-idle.webp",
+      "characters/student-full-idle.webp"
+    ],
+    [
+      "art/characters/student-full-still.png",
+      "characters/student-full-still.png"
+    ],
+    [
+      "art/characters/student-portrait-celebrate.webp",
+      "characters/student-portrait-celebrate.webp"
+    ],
+    [
+      "art/characters/student-portrait-idle.webp",
+      "characters/student-portrait-idle.webp"
+    ],
+    [
+      "art/characters/student-portrait-still.png",
+      "characters/student-portrait-still.png"
+    ],
+    [
+      "art/previews/student-avatar-idle.gif",
+      "previews/student-avatar-idle.gif"
+    ],
+    [
+      "art/previews/student-full-idle.gif",
+      "previews/student-full-idle.gif"
+    ],
+    [
+      "art/previews/student-portrait-idle.gif",
+      "previews/student-portrait-idle.gif"
+    ]
+  ]
+}

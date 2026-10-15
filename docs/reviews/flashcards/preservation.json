@@ -1,0 +1,11 @@
+{
+  "baselineFiles": 27,
+  "unchangedFiles": 26,
+  "changed": [
+    "src/features/focus/FocusPage.tsx"
+  ],
+  "unexpected": [],
+  "approvedAssetsPreserved": true,
+  "approvedAssetCount": 10,
+  "compositionNote": "FocusPage recebe somente import/render de FlashcardSection e atualização do texto que anunciava a entrega futura. Motor, provider, store, CSS e testes do Pomodoro permanecem intactos."
+}

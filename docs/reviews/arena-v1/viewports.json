@@ -1,0 +1,614 @@
+[
+  {
+    "brokenImages": [],
+    "controls": [
+      {
+        "bottom": 876.375,
+        "height": 46,
+        "label": "Em repouso",
+        "overflows": false,
+        "right": 408.515625,
+        "width": 135.515625,
+        "x": 273,
+        "y": 830.375
+      },
+      {
+        "bottom": 876.375,
+        "height": 46,
+        "label": "Ataque",
+        "overflows": false,
+        "right": 540.515625,
+        "width": 120,
+        "x": 420.515625,
+        "y": 830.375
+      },
+      {
+        "bottom": 876.375,
+        "height": 46,
+        "label": "Dano",
+        "overflows": false,
+        "right": 672.515625,
+        "width": 120,
+        "x": 552.515625,
+        "y": 830.375
+      },
+      {
+        "bottom": 876.375,
+        "height": 46,
+        "label": "Derrota",
+        "overflows": false,
+        "right": 804.515625,
+        "width": 120,
+        "x": 684.515625,
+        "y": 830.375
+      }
+    ],
+    "guardian": {
+      "bottom": 615.859375,
+      "height": 310,
+      "right": 1226.515625,
+      "width": 310,
+      "x": 916.515625,
+      "y": 305.859375
+    },
+    "hud": [
+      {
+        "bottom": 273.578125,
+        "height": 84.1875,
+        "participant": "student",
+        "right": 558,
+        "width": 290,
+        "x": 268,
+        "y": 189.390625
+      },
+      {
+        "bottom": 273.578125,
+        "height": 84.1875,
+        "participant": "guardian",
+        "right": 1373,
+        "width": 290,
+        "x": 1083,
+        "y": 189.390625
+      }
+    ],
+    "pageWidth": 1425,
+    "stage": {
+      "bottom": 602.953125,
+      "height": 430.5625,
+      "right": 1391,
+      "width": 1141,
+      "x": 250,
+      "y": 172.390625
+    },
+    "stageParent": {
+      "bottom": 713.34375,
+      "height": 540.953125,
+      "right": 1391,
+      "width": 1141,
+      "x": 250,
+      "y": 172.390625
+    },
+    "student": {
+      "bottom": 559.90625,
+      "height": 196,
+      "right": 644.65625,
+      "width": 196,
+      "x": 448.65625,
+      "y": 363.90625
+    },
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    }
+  },
+  {
+    "brokenImages": [],
+    "controls": [
+      {
+        "bottom": 847.171875,
+        "height": 46,
+        "label": "Em repouso",
+        "overflows": false,
+        "right": 408.515625,
+        "width": 135.515625,
+        "x": 273,
+        "y": 801.171875
+      },
+      {
+        "bottom": 847.171875,
+        "height": 46,
+        "label": "Ataque",
+        "overflows": false,
+        "right": 540.515625,
+        "width": 120,
+        "x": 420.515625,
+        "y": 801.171875
+      },
+      {
+        "bottom": 847.171875,
+        "height": 46,
+        "label": "Dano",
+        "overflows": false,
+        "right": 672.515625,
+        "width": 120,
+        "x": 552.515625,
+        "y": 801.171875
+      },
+      {
+        "bottom": 847.171875,
+        "height": 46,
+        "label": "Derrota",
+        "overflows": false,
+        "right": 804.515625,
+        "width": 120,
+        "x": 684.515625,
+        "y": 801.171875
+      }
+    ],
+    "guardian": {
+      "bottom": 585.828125,
+      "height": 310,
+      "right": 1173.234375,
+      "width": 310,
+      "x": 863.234375,
+      "y": 275.828125
+    },
+    "hud": [
+      {
+        "bottom": 272.296875,
+        "height": 84.1875,
+        "participant": "student",
+        "right": 558,
+        "width": 290,
+        "x": 268,
+        "y": 188.109375
+      },
+      {
+        "bottom": 272.296875,
+        "height": 84.1875,
+        "participant": "guardian",
+        "right": 1299,
+        "width": 290,
+        "x": 1009,
+        "y": 188.109375
+      }
+    ],
+    "pageWidth": 1351,
+    "stage": {
+      "bottom": 573.75,
+      "height": 402.640625,
+      "right": 1317,
+      "width": 1067,
+      "x": 250,
+      "y": 171.109375
+    },
+    "stageParent": {
+      "bottom": 684.140625,
+      "height": 513.03125,
+      "right": 1317,
+      "width": 1067,
+      "x": 250,
+      "y": 171.109375
+    },
+    "student": {
+      "bottom": 533.5,
+      "height": 196,
+      "right": 625.40625,
+      "width": 196,
+      "x": 429.40625,
+      "y": 337.5
+    },
+    "viewport": {
+      "height": 768,
+      "width": 1366
+    }
+  },
+  {
+    "brokenImages": [],
+    "controls": [
+      {
+        "bottom": 792.09375,
+        "height": 46,
+        "label": "Em repouso",
+        "overflows": false,
+        "right": 374.515625,
+        "width": 135.515625,
+        "x": 239,
+        "y": 746.09375
+      },
+      {
+        "bottom": 792.09375,
+        "height": 46,
+        "label": "Ataque",
+        "overflows": false,
+        "right": 506.515625,
+        "width": 120,
+        "x": 386.515625,
+        "y": 746.09375
+      },
+      {
+        "bottom": 792.09375,
+        "height": 46,
+        "label": "Dano",
+        "overflows": false,
+        "right": 638.515625,
+        "width": 120,
+        "x": 518.515625,
+        "y": 746.09375
+      },
+      {
+        "bottom": 792.09375,
+        "height": 46,
+        "label": "Derrota",
+        "overflows": false,
+        "right": 770.515625,
+        "width": 120,
+        "x": 650.515625,
+        "y": 746.09375
+      }
+    ],
+    "guardian": {
+      "bottom": 506.46875,
+      "height": 260.765625,
+      "right": 898.6171875,
+      "width": 260.765625,
+      "x": 637.8515625,
+      "y": 245.703125
+    },
+    "hud": [
+      {
+        "bottom": 257.46875,
+        "height": 84.1875,
+        "participant": "student",
+        "right": 524,
+        "width": 290,
+        "x": 234,
+        "y": 173.28125
+      },
+      {
+        "bottom": 257.46875,
+        "height": 84.1875,
+        "participant": "guardian",
+        "right": 965,
+        "width": 290,
+        "x": 675,
+        "y": 173.28125
+      }
+    ],
+    "pageWidth": 1009,
+    "stage": {
+      "bottom": 496.28125,
+      "height": 340,
+      "right": 983,
+      "width": 767,
+      "x": 216,
+      "y": 156.28125
+    },
+    "stageParent": {
+      "bottom": 606.671875,
+      "height": 450.390625,
+      "right": 983,
+      "width": 767,
+      "x": 216,
+      "y": 156.28125
+    },
+    "student": {
+      "bottom": 462.28125,
+      "height": 168.734375,
+      "right": 499.7734375,
+      "width": 168.734375,
+      "x": 331.0390625,
+      "y": 293.546875
+    },
+    "viewport": {
+      "height": 768,
+      "width": 1024
+    }
+  },
+  {
+    "brokenImages": [],
+    "controls": [
+      {
+        "bottom": 833.703125,
+        "height": 46,
+        "label": "Em repouso",
+        "overflows": false,
+        "right": 358.515625,
+        "width": 135.515625,
+        "x": 223,
+        "y": 787.703125
+      },
+      {
+        "bottom": 833.703125,
+        "height": 46,
+        "label": "Ataque",
+        "overflows": false,
+        "right": 490.515625,
+        "width": 120,
+        "x": 370.515625,
+        "y": 787.703125
+      },
+      {
+        "bottom": 833.703125,
+        "height": 46,
+        "label": "Dano",
+        "overflows": false,
+        "right": 622.515625,
+        "width": 120,
+        "x": 502.515625,
+        "y": 787.703125
+      },
+      {
+        "bottom": 891.703125,
+        "height": 46,
+        "label": "Derrota",
+        "overflows": false,
+        "right": 343,
+        "width": 120,
+        "x": 223,
+        "y": 845.703125
+      }
+    ],
+    "guardian": {
+      "bottom": 524.078125,
+      "height": 180.53125,
+      "right": 672.578125,
+      "width": 180.53125,
+      "x": 492.046875,
+      "y": 343.546875
+    },
+    "hud": [
+      {
+        "bottom": 275.078125,
+        "height": 84.1875,
+        "participant": "student",
+        "right": 453.5,
+        "width": 235.5,
+        "x": 218,
+        "y": 190.890625
+      },
+      {
+        "bottom": 275.078125,
+        "height": 84.1875,
+        "participant": "guardian",
+        "right": 713,
+        "width": 235.5,
+        "x": 477.5,
+        "y": 190.890625
+      }
+    ],
+    "pageWidth": 753,
+    "stage": {
+      "bottom": 513.890625,
+      "height": 340,
+      "right": 731,
+      "width": 531,
+      "x": 200,
+      "y": 173.890625
+    },
+    "stageParent": {
+      "bottom": 648.28125,
+      "height": 474.390625,
+      "right": 731,
+      "width": 531,
+      "x": 200,
+      "y": 173.890625
+    },
+    "student": {
+      "bottom": 479.890625,
+      "height": 116.8125,
+      "right": 396.453125,
+      "width": 116.8125,
+      "x": 279.640625,
+      "y": 363.078125
+    },
+    "viewport": {
+      "height": 1024,
+      "width": 768
+    }
+  },
+  {
+    "brokenImages": [],
+    "controls": [
+      {
+        "bottom": 892.265625,
+        "height": 46,
+        "label": "Em repouso",
+        "overflows": false,
+        "right": 181.5,
+        "width": 145.5,
+        "x": 36,
+        "y": 846.265625
+      },
+      {
+        "bottom": 892.265625,
+        "height": 46,
+        "label": "Ataque",
+        "overflows": false,
+        "right": 339,
+        "width": 145.5,
+        "x": 193.5,
+        "y": 846.265625
+      },
+      {
+        "bottom": 950.265625,
+        "height": 46,
+        "label": "Dano",
+        "overflows": false,
+        "right": 181.5,
+        "width": 145.5,
+        "x": 36,
+        "y": 904.265625
+      },
+      {
+        "bottom": 950.265625,
+        "height": 46,
+        "label": "Derrota",
+        "overflows": false,
+        "right": 339,
+        "width": 145.5,
+        "x": 193.5,
+        "y": 904.265625
+      }
+    ],
+    "guardian": {
+      "bottom": 566.890625,
+      "height": 201.90625,
+      "right": 357.953125,
+      "width": 201.90625,
+      "x": 156.046875,
+      "y": 364.984375
+    },
+    "hud": [
+      {
+        "bottom": 369.984375,
+        "height": 97,
+        "participant": "student",
+        "right": 183.5,
+        "width": 153.5,
+        "x": 30,
+        "y": 272.984375
+      },
+      {
+        "bottom": 369.984375,
+        "height": 97,
+        "participant": "guardian",
+        "right": 345,
+        "width": 153.5,
+        "x": 191.5,
+        "y": 272.984375
+      }
+    ],
+    "pageWidth": 375,
+    "stage": {
+      "bottom": 563.890625,
+      "height": 300.90625,
+      "right": 353,
+      "width": 331,
+      "x": 22,
+      "y": 262.984375
+    },
+    "stageParent": {
+      "bottom": 687.453125,
+      "height": 424.46875,
+      "right": 353,
+      "width": 331,
+      "x": 22,
+      "y": 262.984375
+    },
+    "student": {
+      "bottom": 527.796875,
+      "height": 119.15625,
+      "right": 161.015625,
+      "width": 119.15625,
+      "x": 41.859375,
+      "y": 408.640625
+    },
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  {
+    "brokenImages": [],
+    "controls": [
+      {
+        "bottom": 1044.171875,
+        "height": 65.59375,
+        "label": "Em repouso",
+        "overflows": false,
+        "right": 146.5,
+        "width": 110.5,
+        "x": 36,
+        "y": 978.578125
+      },
+      {
+        "bottom": 1044.171875,
+        "height": 65.59375,
+        "label": "Ataque",
+        "overflows": false,
+        "right": 269,
+        "width": 110.5,
+        "x": 158.5,
+        "y": 978.578125
+      },
+      {
+        "bottom": 1102.171875,
+        "height": 46,
+        "label": "Dano",
+        "overflows": false,
+        "right": 146.5,
+        "width": 110.5,
+        "x": 36,
+        "y": 1056.171875
+      },
+      {
+        "bottom": 1102.171875,
+        "height": 46,
+        "label": "Derrota",
+        "overflows": false,
+        "right": 269,
+        "width": 110.5,
+        "x": 158.5,
+        "y": 1056.171875
+      }
+    ],
+    "guardian": {
+      "bottom": 628.625,
+      "height": 159.203125,
+      "right": 286.8984375,
+      "width": 159.203125,
+      "x": 127.6953125,
+      "y": 469.421875
+    },
+    "hud": [
+      {
+        "bottom": 447.78125,
+        "height": 97,
+        "participant": "student",
+        "right": 148.5,
+        "width": 118.5,
+        "x": 30,
+        "y": 350.78125
+      },
+      {
+        "bottom": 447.78125,
+        "height": 97,
+        "participant": "guardian",
+        "right": 275,
+        "width": 118.5,
+        "x": 156.5,
+        "y": 350.78125
+      }
+    ],
+    "pageWidth": 305,
+    "stage": {
+      "bottom": 625.78125,
+      "height": 285,
+      "right": 283,
+      "width": 261,
+      "x": 22,
+      "y": 340.78125
+    },
+    "stageParent": {
+      "bottom": 771.734375,
+      "height": 430.953125,
+      "right": 283,
+      "width": 261,
+      "x": 22,
+      "y": 340.78125
+    },
+    "student": {
+      "bottom": 591.59375,
+      "height": 93.953125,
+      "right": 131.6015625,
+      "width": 93.953125,
+      "x": 37.6484375,
+      "y": 497.640625
+    },
+    "viewport": {
+      "height": 720,
+      "width": 320
+    }
+  }
+]

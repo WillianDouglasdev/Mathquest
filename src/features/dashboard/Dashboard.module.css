@@ -1,0 +1,1250 @@
+/*
+ * A hierarquia do Dashboard segue os cards aprovados: trilha e nível, sequência
+ *  e missão, desafio e ranking. Os breakpoints reorganizam as colunas sem reduzir
+ *  textos ou alvos de interação até ficarem difíceis de ler e tocar.
+ */
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex-shrink: 1;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  color: #6381a0;
+  margin-bottom: 6px;
+}
+.greeting h1 {
+  margin-bottom: 7px;
+}
+.greeting p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 22px;
+}
+.trail {
+  grid-column: span 7;
+}
+.level {
+  grid-column: span 5;
+}
+.streak {
+  grid-column: span 5;
+}
+.mission {
+  grid-column: span 7;
+}
+.challenge {
+  grid-column: span 5;
+}
+.ranking {
+  grid-column: span 7;
+}
+.label {
+  font-size: 12px;
+  font-weight: 900;
+  color: #6c83a3;
+  letter-spacing: 0.7px;
+  margin-bottom: 6px;
+}
+.trailHeading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 11px;
+}
+.trailHeading h2 {
+  font-size: 22px;
+  letter-spacing: 0;
+}
+.trailHeading > div {
+  flex: 1;
+}
+.smallLink {
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #edf3fc;
+  border: 1px solid #d3dfef;
+  border-radius: 4px;
+  min-height: 34px;
+  padding: 7px 11px;
+  color: #2b507c;
+  white-space: nowrap;
+}
+.smallLink:hover {
+  background: #dfecfb;
+}
+.trailProgress {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.trailProgress > div {
+  flex: 1;
+}
+.trailProgress > strong {
+  font-family: var(--pixel);
+  font-size: 21px;
+}
+.lessonCount {
+  font-size: 12px;
+  color: #6a7e99;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 21px;
+  gap: 10px;
+}
+.lessonCount > span {
+  color: #3d714b;
+  font-weight: 800;
+}
+.moduleList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  gap: 9px;
+}
+.moduleList li {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+.moduleList li:not(:last-child)::after {
+  content: '···';
+  letter-spacing: 2px;
+  position: absolute;
+  right: -16px;
+  top: 7px;
+  color: #98aec7;
+  font-size: 15px;
+  z-index: 0;
+}
+.moduleList button {
+  border: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 1px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.moduleIcon {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  background: #e7eef8;
+  border: 1px solid #dee6f1;
+  border-radius: 5px;
+}
+.moduleList button > span:last-child {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #607592;
+  max-width: 100%;
+  min-height: 27px;
+  overflow-wrap: normal;
+}
+.completed .moduleIcon {
+  background: #84d56b;
+  border-color: #97df83;
+  box-shadow: inset 0 2px #b6ec9a;
+}
+.current .moduleIcon {
+  background: #3490ed;
+  border: 1px solid #186cc9;
+  box-shadow: inset 0 2px #74bcff;
+}
+.current button > span:last-child {
+  color: #183768;
+  font-weight: 900;
+}
+.moduleList .locked {
+  opacity: 0.7;
+}
+.check {
+  display: block;
+  width: 16px;
+  height: 10px;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: translateY(-2px) rotate(-45deg);
+}
+.level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.levelTop {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.levelShield {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.levelShield > div {
+  position: absolute;
+  inset: 20px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-shadow: 2px 2px #164785;
+}
+.levelShield > div > span {
+  font: 700 15px var(--pixel);
+}
+.levelShield strong {
+  font: 700 39px/1 var(--pixel);
+}
+.levelProgress {
+  flex: 1;
+  min-width: 0;
+}
+.levelProgress > div:first-child {
+  margin-bottom: 12px;
+  white-space: nowrap;
+  font-size: 15px;
+  color: #596e91;
+  font-weight: 800;
+}
+.levelProgress > div:first-child > strong {
+  font: 700 28px var(--pixel);
+  color: var(--navy);
+}
+.levelProgress small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  color: #7a91aa;
+  margin-top: 9px;
+}
+.levelProgress > div[role='progressbar'] {
+  height: 26px;
+}
+.mascotMessage {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  margin-top: 11px;
+}
+.mascotMessage > div {
+  background: #eff5ff;
+  border: 1px solid #cfdeef;
+  position: relative;
+  padding: 12px 13px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #526b90;
+  flex: 1;
+  border-radius: 5px;
+}
+.mascotMessage > div::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 21px;
+  width: 13px;
+  height: 13px;
+  border-left: 1px solid #cfdeef;
+  border-bottom: 1px solid #cfdeef;
+  background: #eff5ff;
+  transform: rotate(45deg);
+}
+.sparkle {
+  position: absolute;
+  right: -4px;
+  top: -8px;
+  color: #f1be1b;
+  font-size: 22px;
+  text-shadow: 1px 1px #e7a718;
+}
+.cardHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.cardHeading h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  white-space: normal;
+  letter-spacing: 0;
+}
+.streak .cardHeading > span {
+  font-size: 12px;
+  padding: 5px 7px;
+}
+.week {
+  display: flex;
+  gap: 7px;
+  justify-content: space-between;
+}
+.week > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  font-size: 12px;
+  color: #5e7798;
+  font-weight: 800;
+  min-width: 0;
+}
+.week > div > span:first-child {
+  width: 100%;
+  max-width: 44px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8e3ef;
+  background: #fff;
+  box-shadow: 0 2px #e1eaf4;
+  border-radius: 6px;
+}
+.week .dayComplete > .check {
+  width: 26px;
+  height: 26px;
+  background: #60bc50;
+  border: 0;
+  transform: none;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: inset 0 2px #82d96c;
+}
+.dayComplete > .check::after {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 8px;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(-45deg);
+  top: 6px;
+  left: 6px;
+}
+.week .dayLocked {
+  border: 1px dashed #b8cde0 !important;
+  opacity: 0.7;
+}
+.streakNote {
+  font-size: 12px;
+  color: #6a819d;
+  margin-top: 14px;
+  text-align: center;
+}
+.mission {
+  background:
+    linear-gradient(90deg, #e6f7ffdb, #e6f7ff65),
+    url('/assets/landscape.png') center 72% / cover;
+  overflow: visible;
+}
+.mission .cardHeading {
+  margin-bottom: 16px;
+}
+.missionBody {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.missionInfo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #ffffffed;
+  padding: 12px 13px;
+  flex: 1 1 240px;
+  border: 1px solid #d4e5ed;
+  min-width: 0;
+}
+.missionInfo > div {
+  flex: 1;
+}
+.missionInfo h3 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.missionInfo p {
+  font-size: 14px;
+  color: #56708f;
+  margin-top: 5px;
+}
+.missionBody > button {
+  font-size: 21px;
+  max-width: 200px;
+  min-height: 72px;
+  gap: 12px;
+  padding: 10px 15px;
+  flex: 0 1 190px;
+}
+.missionProgress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.missionProgress > div {
+  height: 10px;
+  flex: 1;
+  max-width: 160px;
+  padding: 0;
+  border-width: 1px;
+}
+.missionProgress > span {
+  font-size: 12px;
+  color: #7b8fab;
+  white-space: nowrap;
+}
+.challenge .cardHeading,
+.ranking .cardHeading {
+  margin-bottom: 15px;
+}
+.challengeBody {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.challengeArt {
+  flex: 0 0 37%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: url('/assets/landscape.png') 60% 80% / auto 170px;
+  border: 2px solid #254d75;
+  image-rendering: pixelated;
+  position: relative;
+  box-shadow: 2px 3px #cddde8;
+}
+.challengeArt::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  height: 10px;
+  background: #a67b4b;
+  border-block: 2px solid #5d3e2f;
+  z-index: 0;
+}
+.fraction {
+  background: #f5fbff;
+  border: 3px solid #24456a;
+  box-shadow: 3px 3px #183559;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 700 24px/1.1 var(--pixel);
+  padding: 5px 10px;
+  position: relative;
+  z-index: 1;
+  transform: rotate(-4deg);
+  min-width: 35px;
+}
+.fraction:last-child {
+  transform: rotate(4deg);
+}
+.fraction > span:first-child {
+  border-bottom: 2px solid #233756;
+  padding-bottom: 2px;
+}
+.versus {
+  font: 700 24px var(--pixel);
+  color: white;
+  text-shadow: 2px 2px #102350;
+  position: relative;
+  z-index: 1;
+}
+.challengeCopy {
+  flex: 1;
+  min-width: 0;
+}
+.challengeCopy > span:first-child {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #67849d;
+  white-space: normal;
+  margin-bottom: 7px;
+}
+.challengeCopy h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.challengeCopy p {
+  font-size: 14px;
+  color: #607795;
+  line-height: 1.6;
+}
+.challengeMeta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 12px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+.challengeMeta > span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.challengeMeta > span:first-child {
+  color: #40825a;
+  background: #edf7ec;
+  border: 1px solid #d8e9d9;
+  padding: 4px 5px;
+  border-radius: 3px;
+}
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+.bars i {
+  display: block;
+  width: 3px;
+  height: 5px;
+  background: #438d50;
+}
+.bars i:nth-child(2) {
+  height: 8px;
+}
+.bars i:nth-child(3) {
+  height: 12px;
+}
+.clock {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #e9b52b;
+  border-radius: 50%;
+  position: relative;
+}
+.clock::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 3px;
+  height: 4px;
+  border-left: 1px solid #e9b52b;
+  border-bottom: 1px solid #e9b52b;
+}
+.fullButton {
+  width: 100%;
+}
+.textButton {
+  background: none;
+  border: 0;
+  min-height: 35px;
+  padding: 4px 0 4px 8px;
+  color: #4c6c92;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+.textButton:hover {
+  text-decoration: underline;
+}
+.rankingBody {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 16px;
+}
+.rankingTable {
+  min-width: 0;
+}
+.demoLabel {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #607994;
+  display: block;
+  margin-bottom: 7px;
+  padding-left: 7px;
+}
+.record {
+  background: linear-gradient(#f0f6ff, #f7faff);
+  border: 1px solid #dee8f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 14px 8px 10px;
+  position: relative;
+}
+.recordLabel {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #58759c;
+  margin-bottom: 9px;
+}
+.record > strong {
+  font: 700 33px var(--pixel);
+}
+.record > span:not([aria-hidden]) {
+  font-size: 12px;
+  color: #6c82a0;
+  margin-top: 3px;
+}
+.record > p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5b7496;
+}
+.bottomNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #72859e;
+  font-size: 12px;
+  margin-top: 23px;
+}
+.bottomNote strong {
+  color: #57718f;
+  font-weight: 700;
+}
+@media (min-width: 1500px) {
+  .grid {
+    gap: 26px;
+  }
+  .cardHeading h2 {
+    font-size: 22px;
+  }
+  .welcome {
+    margin-bottom: 34px;
+  }
+  .challengeArt {
+    height: 152px;
+  }
+  .missionBody > button {
+    max-width: 200px;
+  }
+  .challengeCopy h3 {
+    font-size: 27px;
+  }
+  .trailHeading h2 {
+    font-size: 22px;
+  }
+  .moduleList button > span:last-child {
+    font-size: 12px;
+  }
+  .missionInfo h3 {
+    font-size: 18px;
+  }
+  .level {
+    padding: 24px;
+  }
+  .mascotMessage > div {
+    font-size: 12px;
+  }
+  .rankingList li {
+    min-height: 38px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 901px) {
+  .greeting > span {
+    width: 68px !important;
+    height: 68px !important;
+  }
+  .greeting h1 {
+    font-size: 34px;
+  }
+  .eyebrow {
+    font-size: 12px;
+  }
+  .greeting p {
+    font-size: 14px;
+  }
+  .welcome {
+    gap: 16px;
+  }
+  .cardHeading h2 {
+    font-size: 21px;
+    gap: 5px;
+  }
+  .trailHeading h2 {
+    font-size: 22px;
+  }
+  .trailHeading {
+    gap: 9px;
+  }
+  .trailHeading > span {
+    width: 49px !important;
+    height: 49px !important;
+  }
+  .smallLink {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .levelShield > span {
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .levelShield > div {
+    inset: 18px 0 0;
+  }
+  .levelShield strong {
+    font-size: 34px;
+  }
+  .levelShield > div > span {
+    font-size: 13px;
+  }
+  .mascotMessage {
+    gap: 8px;
+  }
+  .mascotMessage > span:first-child {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .mascotMessage > div {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .levelTop {
+    gap: 8px;
+  }
+  .levelProgress > div:first-child {
+    font-size: 12px;
+  }
+  .levelProgress > div:first-child > strong {
+    font-size: 25px;
+  }
+  .lessonCount {
+    font-size: 12px;
+  }
+  .moduleList {
+    gap: 5px;
+  }
+  .moduleList button > span:last-child {
+    font-size: 12px;
+  }
+  .missionBody {
+    gap: 10px;
+  }
+  .missionBody > button {
+    max-width: 200px;
+    font-size: 20px;
+    padding: 9px;
+  }
+  .missionInfo {
+    padding: 11px 9px;
+    gap: 5px;
+  }
+  .missionInfo > span {
+    width: 43px !important;
+    height: 43px !important;
+  }
+  .missionInfo h3 {
+    font-size: 18px;
+  }
+  .challengeBody {
+    gap: 12px;
+  }
+  .challengeArt {
+    gap: 5px;
+    flex-basis: 36%;
+    height: 136px;
+  }
+  .fraction {
+    padding: 4px 7px;
+    font-size: 22px;
+    min-width: 30px;
+  }
+  .challengeCopy h3 {
+    font-size: 22px;
+  }
+  .challengeCopy p {
+    font-size: 14px;
+  }
+  .challengeMeta {
+    font-size: 12px;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .rankingBody {
+    gap: 10px;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .recordLabel {
+    font-size: 12px;
+  }
+  .record > strong {
+    font-size: 29px;
+  }
+  .record {
+    padding-inline: 5px;
+  }
+  .streak .cardHeading > span {
+    font-size: 12px;
+  }
+  .week {
+    gap: 5px;
+  }
+  .bottomNote {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .welcome {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .welcome > div:last-child {
+    max-width: none;
+  }
+  .grid {
+    gap: 22px;
+  }
+  .trail,
+  .level,
+  .streak,
+  .mission,
+  .challenge,
+  .ranking {
+    grid-column: span 12;
+  }
+  .trailHeading h2 {
+    font-size: 22px;
+  }
+  .moduleList button > span:last-child {
+    font-size: 12px;
+  }
+  .level {
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+  }
+  .levelTop {
+    flex: 1;
+  }
+  .mascotMessage {
+    flex: 1;
+    margin: 0;
+  }
+  .cardHeading h2 {
+    font-size: 22px;
+  }
+  .missionBody > button {
+    max-width: 200px;
+  }
+  .challengeArt {
+    flex-basis: 35%;
+  }
+  .challengeCopy h3 {
+    font-size: 29px;
+  }
+  .challengeMeta {
+    gap: 18px;
+    font-size: 12px;
+  }
+  .rankingBody {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .levelShield > span {
+    width: 93px !important;
+    height: 93px !important;
+  }
+  .levelShield > div {
+    inset: 18px 0 0;
+  }
+  .levelShield strong {
+    font-size: 34px;
+  }
+}
+@media (max-width: 700px) {
+  .moduleList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 16px;
+  }
+  .moduleList li:not(:last-child)::after {
+    content: none;
+  }
+  .welcome {
+    margin-bottom: 25px;
+  }
+  .greeting {
+    gap: 10px;
+  }
+  .greeting > span {
+    width: 72px !important;
+    height: 72px !important;
+  }
+  .greeting h1 {
+    font-size: 34px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+  .greeting p {
+    font-size: 14px;
+  }
+  .grid {
+    gap: 24px;
+  }
+  .cardHeading h2 {
+    font-size: 22px;
+  }
+  .bottomNote {
+    font-size: 12px;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .bottomNote > span:first-child {
+    flex-shrink: 0;
+  }
+  .trailHeading h2 {
+    font-size: 22px;
+  }
+  .trailHeading {
+    gap: 10px;
+  }
+  .trailHeading > span {
+    width: 53px !important;
+    height: 53px !important;
+  }
+  .trailHeading .label {
+    font-size: 12px;
+  }
+  .smallLink {
+    font-size: 12px;
+    padding: 5px 9px;
+    gap: 6px;
+  }
+  .moduleList {
+    gap: 5px;
+  }
+  .moduleList button > span:last-child {
+    font-size: 12px;
+  }
+  .moduleIcon {
+    width: 33px;
+    height: 33px;
+  }
+  .moduleList li:not(:last-child)::after {
+    letter-spacing: 1px;
+    right: -10px;
+    top: 6px;
+    font-size: 12px;
+  }
+  .lessonCount {
+    font-size: 12px;
+  }
+  .level {
+    padding: 20px;
+    gap: 14px;
+  }
+  .mascotMessage > div {
+    font-size: 12px;
+  }
+  .mascotMessage > span:first-child {
+    width: 61px !important;
+    height: 61px !important;
+  }
+  .levelProgress > div:first-child {
+    font-size: 12px;
+  }
+  .levelProgress > div:first-child > strong {
+    font-size: 26px;
+  }
+  .levelProgress small {
+    font-size: 12px;
+  }
+  .challengeArt {
+    height: 150px;
+  }
+  .challengeBody {
+    gap: 18px;
+  }
+  .challengeCopy h3 {
+    font-size: 26px;
+  }
+  .challengeCopy p {
+    font-size: 14px;
+  }
+  .rankingBody {
+    gap: 13px;
+  }
+  .recordLabel {
+    font-size: 12px;
+  }
+  .record > strong {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .greeting h1 {
+    font-size: 31px;
+  }
+  .greeting > span {
+    width: 60px !important;
+    height: 70px !important;
+  }
+  .greeting p {
+    font-size: 14px;
+  }
+  .eyebrow {
+    font-size: 12px;
+  }
+  .trailHeading h2 {
+    font-size: 22px;
+  }
+  .trailHeading > span {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  .smallLink {
+    padding: 5px;
+    font-size: 12px;
+    gap: 4px;
+  }
+  .smallLink > span {
+    font-size: 17px;
+  }
+  .lessonCount > span {
+    display: none;
+  }
+  .level {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .levelTop {
+    width: 100%;
+    gap: 17px;
+  }
+  .levelShield > span {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .levelProgress > div:first-child {
+    font-size: 15px;
+  }
+  .levelProgress > div:first-child > strong {
+    font-size: 28px;
+  }
+  .mascotMessage {
+    width: 100%;
+    gap: 14px;
+  }
+  .mascotMessage > div {
+    font-size: 12px;
+  }
+  .mascotMessage > span:first-child {
+    width: 67px !important;
+    height: 67px !important;
+  }
+  .cardHeading h2 {
+    font-size: 22px;
+    gap: 5px;
+  }
+  .cardHeading h2 > span {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .cardHeading {
+    gap: 5px;
+  }
+  .streak .cardHeading > span {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  .missionBody {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .missionBody > button {
+    max-width: none;
+    min-height: 47px;
+    flex: 0 1 auto;
+  }
+  .missionInfo {
+    padding: 12px;
+    flex: 0 1 auto;
+  }
+  .missionInfo h3 {
+    font-size: 18px;
+  }
+  .missionInfo > span {
+    width: 58px !important;
+    height: 58px !important;
+  }
+  .missionProgress > div {
+    max-width: none;
+  }
+  .challengeBody {
+    gap: 13px;
+    align-items: stretch;
+  }
+  .challengeArt {
+    flex-basis: 37%;
+    min-height: 142px;
+    height: auto;
+    gap: 5px;
+  }
+  .fraction {
+    font-size: 22px;
+    padding: 5px 7px;
+    min-width: 30px;
+  }
+  .versus {
+    font-size: 20px;
+  }
+  .challengeCopy h3 {
+    font-size: 24px;
+  }
+  .challengeCopy p {
+    font-size: 14px;
+  }
+  .challengeMeta {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .challengeCopy > span:first-child {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  .rankingBody {
+    grid-template-columns: 1fr;
+  }
+  .record {
+    display: grid;
+    grid-template-columns: 1fr 1fr 65px;
+    gap: 4px 10px;
+    text-align: left;
+    padding: 12px 16px;
+    align-items: center;
+  }
+  .recordLabel {
+    grid-column: 1/3;
+    margin: 0;
+    font-size: 12px;
+  }
+  .record > strong {
+    font-size: 29px;
+  }
+  .record > span:not([aria-hidden]) {
+    font-size: 12px;
+    align-self: center;
+    margin: 0;
+  }
+  .record > span[aria-hidden] {
+    grid-column: 3;
+    grid-row: 1/4;
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .record p {
+    grid-column: 1/3;
+    font-size: 14px;
+  }
+  .record p br {
+    display: initial;
+  }
+  .textButton {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .demoLabel {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .week > div > span:first-child {
+    max-width: 38px;
+  }
+  .week {
+    gap: 6px;
+  }
+  .week > div {
+    font-size: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .cardHeading {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .levelShield > span {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .levelShield > div {
+    inset: 15px 0 0;
+  }
+  .levelShield strong {
+    font-size: 28px;
+  }
+  .levelShield > div > span {
+    font-size: 12px;
+  }
+  .levelTop {
+    gap: 12px;
+  }
+  .levelProgress > div:first-child {
+    font-size: 12px;
+  }
+  .levelProgress > div:first-child > strong {
+    font-size: 25px;
+  }
+  .trailHeading {
+    flex-wrap: wrap;
+  }
+  .trailHeading .smallLink {
+    margin-left: auto;
+  }
+}

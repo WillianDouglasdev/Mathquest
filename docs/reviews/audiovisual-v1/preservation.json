@@ -1,0 +1,18 @@
+{
+  "baselineFiles": 48,
+  "changed": [
+    "src/app/App.tsx",
+    "src/components/ui.module.css",
+    "src/components/ui.tsx",
+    "src/features/focus/FocusPage.module.css",
+    "src/features/focus/FocusPage.tsx",
+    "src/features/review/FlashcardSection.module.css",
+    "src/features/review/FlashcardSection.tsx"
+  ],
+  "unexpected": [],
+  "approvedAssetsPreserved": true,
+  "approvedAssetCount": 10,
+  "educationalRulesAndExistingTestsPreserved": true,
+  "dependenciesPreserved": true,
+  "note": "Integrações autorizadas de apresentação, preferências e sons nos componentes; motores, stores de progresso, dados, provider de foco, testes anteriores e assets aprovados preservados."
+}

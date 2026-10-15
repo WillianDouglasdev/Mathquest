@@ -1,0 +1,19 @@
+{
+  "baselineFiles": 109,
+  "changed": [
+    "src/app/App.module.css",
+    "src/app/App.tsx",
+    "src/features/dashboard/Dashboard.tsx",
+    "src/features/experience/motion.css",
+    "src/test/dashboard.test.tsx"
+  ],
+  "unexpected": [],
+  "approvedAssetsPreserved": true,
+  "assetCount": 16,
+  "buildAssetsIdentical": true,
+  "packageSourcesPreserved": true,
+  "sourceFileCount": 25,
+  "otherApplicationFilesPreserved": true,
+  "protectedApplicationFiles": 61,
+  "dependenciesPreserved": true
+}

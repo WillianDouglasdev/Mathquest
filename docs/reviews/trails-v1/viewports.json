@@ -1,0 +1,80 @@
+[
+  {
+    "collisions": [],
+    "detailsBelowMap": false,
+    "detailsWidth": 280.75,
+    "height": 1080,
+    "imageRatio": 1.7768356903918128,
+    "mapWidth": 842.25,
+    "minTarget": 56,
+    "pageOverflow": false,
+    "viewportWidth": 838,
+    "width": 1440,
+    "worldWidth": 838
+  },
+  {
+    "collisions": [],
+    "detailsBelowMap": false,
+    "detailsWidth": 262.25,
+    "height": 768,
+    "imageRatio": 1.776887910034371,
+    "mapWidth": 786.75,
+    "minTarget": 56,
+    "pageOverflow": false,
+    "viewportWidth": 783,
+    "width": 1366,
+    "worldWidth": 832
+  },
+  {
+    "collisions": [],
+    "detailsBelowMap": true,
+    "detailsWidth": 771,
+    "height": 768,
+    "imageRatio": 1.776887910034371,
+    "mapWidth": 771,
+    "minTarget": 56,
+    "pageOverflow": false,
+    "viewportWidth": 767,
+    "width": 1024,
+    "worldWidth": 832
+  },
+  {
+    "collisions": [],
+    "detailsBelowMap": true,
+    "detailsWidth": 535,
+    "height": 1024,
+    "imageRatio": 1.776887910034371,
+    "mapWidth": 535,
+    "minTarget": 56,
+    "pageOverflow": false,
+    "viewportWidth": 531,
+    "width": 768,
+    "worldWidth": 832
+  },
+  {
+    "collisions": [],
+    "detailsBelowMap": true,
+    "detailsWidth": 335,
+    "height": 844,
+    "imageRatio": 1.776887910034371,
+    "mapWidth": 335,
+    "minTarget": 56,
+    "pageOverflow": false,
+    "viewportWidth": 331,
+    "width": 390,
+    "worldWidth": 832
+  },
+  {
+    "collisions": [],
+    "detailsBelowMap": true,
+    "detailsWidth": 265,
+    "height": 720,
+    "imageRatio": 1.776887910034371,
+    "mapWidth": 265,
+    "minTarget": 56,
+    "pageOverflow": false,
+    "viewportWidth": 261,
+    "width": 320,
+    "worldWidth": 832
+  }
+]
